@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.OrderPayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_14dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/order_pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_3dp"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_11dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/height_5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:cardElevation="@dimen/height_3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_order_pay_diamond"
+                    android:layout_width="@dimen/height_43dp"
+                    android:layout_height="@dimen/height_36dp"
+                    android:layout_marginTop="@dimen/height_15dp"
+                    android:src="@mipmap/icon_diamond_blue" />
+
+                <TextView
+                    android:id="@+id/tv_order_pay_sale_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_7dp"
+                    android:text="300颗钻石"
+                    android:textColor="@color/black_5D"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_order_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_15dp"
+                    android:layout_marginTop="@dimen/height_10dp"
+                    android:text="19.9元"
+                    android:textColor="@color/black_5D"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_3dp"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_11dp"
+            android:layout_marginTop="@dimen/height_4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/height_5dp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="@dimen/height_3dp">
+
+            <RelativeLayout
+                android:id="@+id/re_pay_yue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_68dp">
+
+                <ImageView
+                    android:id="@+id/iv_yue"
+                    android:layout_width="@dimen/height_38dp"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:src="@mipmap/icon_balance" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_toRightOf="@id/iv_yue"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额支付"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_yue_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户余额 100.9元"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/black_99"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_yue"
+                    android:layout_width="@dimen/height_30dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_15dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_3dp"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_11dp"
+            android:layout_marginTop="@dimen/height_4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/height_5dp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="@dimen/height_3dp">
+
+            <RelativeLayout
+                android:id="@+id/re_pay_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_68dp">
+
+                <ImageView
+                    android:id="@+id/iv_alipay"
+                    android:layout_width="@dimen/height_38dp"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:src="@mipmap/icon_alipay" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_toRightOf="@id/iv_alipay"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝支付"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="推荐有支付宝账号的用户使用"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_alipay"
+                    android:layout_width="@dimen/height_30dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_15dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_3dp"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_11dp"
+            android:layout_marginTop="@dimen/height_4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/height_5dp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="@dimen/height_3dp">
+
+            <RelativeLayout
+                android:id="@+id/re_pay_wx"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_68dp">
+
+                <ImageView
+                    android:id="@+id/iv_wxpay"
+                    android:layout_width="@dimen/height_38dp"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:src="@mipmap/icon_wxpay" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_toRightOf="@id/iv_wxpay"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_wxpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐安装微信5.0及以上的用户使用"
+                        android:textColor="@color/black_5D"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_wxpay"
+                    android:layout_width="@dimen/height_30dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_15dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_3dp"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_11dp"
+            android:layout_marginTop="@dimen/height_4dp"
+            app:cardCornerRadius="@dimen/height_10dp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="@dimen/height_3dp">
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_radius_selector"
+                android:gravity="center"
+                android:text="确认支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

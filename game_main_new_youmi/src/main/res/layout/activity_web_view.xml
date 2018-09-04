@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.WebViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_webView_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_webView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="@string/mine_about"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/progressbar_webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white_1">
+
+    </com.tencent.smtt.sdk.WebView>
+
+    <LinearLayout
+        android:id="@+id/ll_banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>

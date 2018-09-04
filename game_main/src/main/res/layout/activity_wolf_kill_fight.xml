@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wolf_home_fight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_wolf_home_day"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.wolfkill.WolfKillFightActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_wolf_kill_fight_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_wolf_kill_home_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_wolf_kill_fight_back"
+            android:text="9527房间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_marginTop="@dimen/height_25dp"
+                android:background="@drawable/wolf_top_radius_shape"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_wolf_my_identify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:text="你是3号，请准备游戏"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_20dp"
+                android:background="@drawable/wolf_bottom_radius_shape"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_wolf_role_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:text="2狼2好1预1猎"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_130dp"
+            android:layout_height="@dimen/height_43dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_wolf_game_state_bg">
+
+            <TextView
+                android:id="@+id/tv_wolf_game_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="游戏前"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_wolf_kill_player" />
+
+
+</LinearLayout>

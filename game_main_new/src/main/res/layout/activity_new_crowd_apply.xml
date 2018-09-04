@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_friend_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    tools:context="com.leyou.game.activity.friend.NewFriendActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/friend_crowd_notify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_apply_crowd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/height_7dp"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_no_apply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:drawableTop="@mipmap/icon_firend_no_friend"
+            android:gravity="center"
+            android:text="暂时没有群申请哦"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

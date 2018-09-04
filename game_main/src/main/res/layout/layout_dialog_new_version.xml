@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="更新提示"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <TextView
+            android:id="@+id/tv_version_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.发现重大问题，需要更新版本\n2.优化了之前版本过于流畅的问题\n3.我们添加的新的功能，因此安装包又变大了\n4.尽量使用wifi下载哟，如果你流量多，那就随便了，你任性，我们管不了你"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/height_27dp"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_23dp">
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_weight="9"
+            android:visibility="visible"
+            app:rcBackgroundColor="@color/theme_color_un_touch"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgressColor="@color/theme_color"
+            app:rcRadius="@dimen/height_12dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_register_selector"
+            android:text="下载更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_install"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_selector"
+            android:text="下载完成，立即安装"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_42dp"
+    android:layout_height="@dimen/height_60dp"
+    android:background="@color/transparent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_treasure_worker_img"
+        android:layout_width="@dimen/height_30dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_10dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/icon_not_login"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/icon_not_login"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/icon_not_login"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/tv_treasure_worker_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_treasure_worker_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_2dp"
+        android:text="+0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_9" />
+
+</RelativeLayout>

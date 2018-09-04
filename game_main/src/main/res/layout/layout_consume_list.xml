@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_55dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/re_message_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_55dp"
+        android:background="@drawable/item_selector">
+
+        <ImageView
+            android:id="@+id/iv_consume_icon"
+            android:layout_width="@dimen/height_33dp"
+            android:layout_height="@dimen/height_33dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/height_12dp"
+            android:src="@mipmap/icon_system_notice" />
+
+
+        <TextView
+            android:id="@+id/tv_consume_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_50dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:layout_toRightOf="@id/iv_consume_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="主题公告"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_consume_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_consume_list_title"
+            android:layout_marginLeft="@dimen/height_11dp"
+            android:layout_marginRight="@dimen/height_50dp"
+            android:layout_marginTop="@dimen/height_2dp"
+            android:layout_toRightOf="@id/iv_consume_icon"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2017-08-03 13:34"
+            android:textColor="@color/black_a61"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_diamond_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/height_12dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:text="+500钻"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_12" />
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_diamond_number"
+            android:layout_marginRight="@dimen/height_12dp"
+            android:text="+50.90元"
+            android:textColor="@color/black_a61"
+            android:textSize="@dimen/text_size_10" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_edit_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="修改群名称"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <EditText
+            android:id="@+id/et_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:background="@drawable/dialog_input_shape"
+            android:gravity="center_vertical"
+            android:hint="输入要设置的名字"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:maxLength="18"
+            android:paddingLeft="@dimen/height_10dp"
+            android:textColor="@color/black_a46"
+            android:textColorHint="@color/black_bb"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_12dp"
+            android:gravity="center|left"
+            android:text="最大长度18个字符，不可包含特殊字符"
+            android:textColor="@color/black_bb"
+            android:textSize="@dimen/text_size_9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_27dp"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_23dp">
+
+        <Button
+            android:id="@+id/btn_modify_name_confirm"
+            android:layout_width="@dimen/height_200dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+</LinearLayout>

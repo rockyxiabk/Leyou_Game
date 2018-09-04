@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.fragment.FriendFragment_">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@drawable/layout_bg_change_gradually_shape">
+
+        <ImageButton
+            android:id="@+id/ivbtn_friend_address_book"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_address_book" />
+
+        <TextView
+            android:id="@+id/tv_friend_tips"
+            android:layout_width="@dimen/height_12dp"
+            android:layout_height="@dimen/height_12dp"
+            android:layout_marginLeft="@dimen/height_28dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@drawable/text_message_tips_shape"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_7"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_friend_create_crowd"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_3dp"
+                android:layout_marginLeft="@dimen/height_11dp"
+                android:layout_marginRight="@dimen/height_11dp"
+                android:layout_marginTop="@dimen/height_11dp"
+                app:cardCornerRadius="@dimen/height_5dp"
+                app:cardElevation="@dimen/height_3dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_88dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_friend_rank"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_36dp"
+                            android:layout_height="@dimen/height_36dp"
+                            android:src="@mipmap/icon_friend_rank" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_7dp"
+                            android:text="@string/friend_rank"
+                            android:textColor="@color/black_5D"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_message"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_36dp"
+                            android:layout_height="@dimen/height_36dp"
+                            android:src="@mipmap/icon_message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_7dp"
+                            android:text="@string/friend_message"
+                            android:textColor="@color/black_5D"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_hot_point"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_36dp"
+                            android:layout_height="@dimen/height_36dp"
+                            android:src="@mipmap/icon_hot_point" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_7dp"
+                            android:text="@string/mine_feedback"
+                            android:textColor="@color/black_5D"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_1"
+                    android:overScrollMode="never">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_7dp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/height_11dp"
+                            android:layout_marginLeft="@dimen/height_11dp"
+                            android:layout_marginRight="@dimen/height_11dp"
+                            app:cardCornerRadius="@dimen/height_5dp"
+                            app:cardElevation="@dimen/height_3dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycler_chat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:overScrollMode="never">
+
+                                </android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_14dp" />
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_chat_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/height_4dp"
+                    android:layout_marginLeft="@dimen/height_11dp"
+                    android:layout_marginRight="@dimen/height_11dp"
+                    android:layout_marginTop="@dimen/height_4dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/height_5dp"
+                    app:cardElevation="@dimen/height_3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_friend_chat_list_null" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

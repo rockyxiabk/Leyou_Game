@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/re_game_rank_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_47dp"
+    android:layout_marginBottom="@dimen/height_2dp"
+    android:layout_marginTop="@dimen/height_2dp"
+    android:background="@drawable/win_rank_item_radius_bg_selector">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_game_rank_header_img"
+        android:layout_width="@dimen/height_38dp"
+        android:layout_height="@dimen/height_38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_4dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/icon_not_login"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/icon_not_login"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/icon_not_login"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:layout_toRightOf="@id/iv_game_rank_header_img"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_game_rank_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO.1"
+            android:textColor="@color/purple_74"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/tv_game_rank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/app_name"
+            android:textColor="@color/black_ac"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_game_rank_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/height_23dp"
+        android:text="0分"
+        android:textColor="@color/purple_74"
+        android:textSize="@dimen/text_size_12" />
+
+</RelativeLayout>

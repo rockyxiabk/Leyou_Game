@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_57dp"
+    android:layout_height="@dimen/height_92dp"
+    android:layout_marginRight="@dimen/height_2dp">
+
+    <ImageView
+        android:id="@+id/iv_treasure_worker_img"
+        android:layout_width="@dimen/height_52dp"
+        android:layout_height="@dimen/height_62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_8dp"
+        android:src="@mipmap/icon_worker_default" />
+
+    <ImageView
+        android:id="@+id/iv_worker_star"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_6dp"
+        android:layout_marginLeft="@dimen/height_3dp"
+        android:layout_marginTop="@dimen/height_3dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/icon_star_five" />
+
+    <CheckBox
+        android:id="@+id/cb_checked_worker"
+        android:layout_width="@dimen/height_15dp"
+        android:layout_height="@dimen/height_15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/checkbox_worker_selector"
+        android:button="@null"
+        android:checked="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_round_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/height_2dp"
+        android:layout_marginRight="@dimen/height_2dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_phy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:layout_marginRight="@dimen/height_5dp"
+                app:rcBackgroundColor="@color/blue_304c"
+                app:rcMax="100"
+                app:rcProgressColor="@color/blue_4c"
+                app:rcRadius="@dimen/height_4dp" />
+
+            <ImageView
+                android:layout_width="@dimen/height_11dp"
+                android:layout_height="@dimen/height_12dp"
+                android:src="@mipmap/icon_worker_phy" />
+
+            <TextView
+                android:id="@+id/tv_choose_worker_phy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="43"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_power"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:layout_marginRight="@dimen/height_5dp"
+                app:rcBackgroundColor="@color/red_30f2"
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                app:rcProgressColor="@color/red_f2"
+                app:rcRadius="@dimen/height_4dp" />
+
+            <ImageView
+                android:layout_width="@dimen/height_11dp"
+                android:layout_height="@dimen/height_12dp"
+                android:src="@mipmap/icon_worker_fight" />
+
+            <TextView
+                android:id="@+id/tv_choose_worker_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

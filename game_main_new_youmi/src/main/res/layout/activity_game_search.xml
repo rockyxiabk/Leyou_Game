@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.game.GameSearchActivity">
+
+    <!--status bar-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top" />
+    <!--toolbar-->
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ll_bg_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15dp">
+
+            <ImageView
+                android:layout_width="@dimen/height_14dp"
+                android:layout_height="@dimen/height_14dp"
+                android:src="@mipmap/icon_search" />
+
+            <EditText
+                android:id="@+id/et_input_key_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:layout_marginRight="@dimen/height_10dp"
+                android:background="@drawable/et_register_bg"
+                android:hint="@string/app_name"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/black_99"
+                android:textColorHint="@color/black_99"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!--热门索索-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_1dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_34dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:gravity="center"
+                android:text="热门搜索"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_f5" />
+
+            <com.leyou.game.widget.fluid.FluidLayout
+                android:id="@+id/fluid_hot_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.leyou.game.widget.fluid.FluidLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_6dp"
+            android:background="@color/white_1" />
+        <!--历史搜索-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_history_search"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_34dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:gravity="center"
+                android:text="历史搜索"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_1" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!--搜索结果-->
+        <LinearLayout
+            android:id="@+id/ll_search_result_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_1dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <!--搜索结果-->
+        <RelativeLayout
+            android:id="@+id/re_search_result_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_game_search_data_null" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

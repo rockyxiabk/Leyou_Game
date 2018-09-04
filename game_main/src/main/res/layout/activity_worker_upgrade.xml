@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.treasure.WorkerUpgradeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_upgrade_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_upgrade_back"
+            android:text="@string/treasure_upgrade_worker"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_5dp"
+            android:background="@drawable/text_custom_bg"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/height_7dp"
+            android:text="@string/treasure_upgrade_explain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/height_13dp">
+
+            <RelativeLayout
+                android:id="@+id/re_chooser_worker"
+                android:layout_width="@dimen/height_128dp"
+                android:layout_height="@dimen/height_185dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/height_20dp"
+                android:background="@drawable/treasure_bg_worker_red_shape">
+
+                <ImageView
+                    android:id="@+id/iv_worker_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:scaleType="fitStart"
+                    android:layout_marginLeft="@dimen/height_3dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/icon_star_five"/>
+
+                <ImageView
+                    android:id="@+id/iv_upgrade_worker_img"
+                    android:layout_width="@dimen/height_110dp"
+                    android:layout_height="@dimen/height_132dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_20dp"
+                    android:src="@mipmap/icon_add_worker" />
+
+                <TextView
+                    android:id="@+id/tv_upgrade_worker_choose"
+                    android:layout_width="@dimen/height_128dp"
+                    android:layout_height="@dimen/height_28dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/treasure_worker_power_red_bg"
+                    android:gravity="center"
+                    android:text="选择矿工"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_22"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_round_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/height_4dp"
+                    android:layout_marginLeft="@dimen/height_3dp"
+                    android:layout_marginRight="@dimen/height_3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/round_pr_phy"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_8dp"
+                            android:layout_weight="9"
+                            app:rcBackgroundColor="@color/blue_304c"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="100"
+                            app:rcProgressColor="@color/blue_4c"
+                            app:rcRadius="@dimen/height_4dp" />
+
+                        <TextView
+                            android:id="@+id/tv_upgrade_worker_phy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_3dp"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="43"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:id="@+id/round_pr_power"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/height_8dp"
+                            android:layout_weight="9"
+                            app:rcBackgroundColor="@color/red_30f2"
+                            app:rcBackgroundPadding="0dp"
+                            app:rcMax="100"
+                            app:rcProgressColor="@color/red_f2"
+                            app:rcRadius="@dimen/height_4dp" />
+
+                        <TextView
+                            android:id="@+id/tv_upgrade_worker_power"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_3dp"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="100"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_9" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_upgrade_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="+5"
+                    android:textColor="@color/red_f2"
+                    android:textSize="@dimen/text_size_18"
+                    android:visibility="invisible" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif_worker_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_worker_upgrade"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_diamond"
+                android:layout_width="@dimen/height_128dp"
+                android:layout_height="@dimen/height_72dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/iv_add"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_diamond_ext" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="@dimen/height_45dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/icon_add_worker" />
+
+            <TextView
+                android:id="@+id/tv_diamond_number"
+                android:layout_width="@dimen/height_128dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_diamond"
+                android:layout_marginRight="@dimen/height_20dp"
+                android:layout_marginTop="@dimen/height_30dp"
+                android:gravity="center"
+                android:text="0钻石"
+                android:textColor="@color/red_f2"
+                android:textSize="@dimen/text_size_22" />
+
+            <Button
+                android:id="@+id/btn_upgrade_worker_confirm"
+                android:layout_width="@dimen/height_180dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_below="@id/re_chooser_worker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_22dp"
+                android:background="@drawable/btn_bg_treasure_confirm_selector"
+                android:gravity="center"
+                android:text="@string/treasure_upgrade_worker_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_11" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_upgrade_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_upgrade_worker_confirm"
+                android:layout_marginTop="@dimen/height_28dp"
+                android:paddingBottom="@dimen/height_10dp"
+                android:paddingLeft="@dimen/height_10dp"
+                android:paddingRight="@dimen/height_10dp"
+                android:paddingTop="@dimen/height_10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

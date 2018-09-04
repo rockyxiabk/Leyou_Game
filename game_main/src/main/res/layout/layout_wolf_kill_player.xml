@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_wolf_left"
+        android:layout_width="@dimen/height_80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head1"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head1_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state1"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head1"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner1"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_user_identify1"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head2"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head2_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state2"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head2"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner2"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify2"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="狼"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head3"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head3_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state3"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head3"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner3"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify3"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head7"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head7_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state7"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head7"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner7"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify7"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="猎"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head8"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head8_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state8"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head8"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner8"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify8"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@drawable/wolf_role_right_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head9"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head9_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state9"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head9"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner9"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify9"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wolf_right"
+        android:layout_width="@dimen/height_80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head4"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head4_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state4"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head4"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner4"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify4"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="狼"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head5"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head5_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state5"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head5"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner5"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify5"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head6"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head6_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state6"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head6"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner6"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify6"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head10"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head10_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state10"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head10"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner10"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify10"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head11"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head11_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state11"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head11"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner11"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify11"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginTop="@dimen/height_5dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/wolf_role_left_shape">
+
+                <TextView
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/wolf_radius_shape"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_head12"
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp"
+                    android:src="@mipmap/icon_not_login"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height_45dp"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_3dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_user_head12_state"
+                        android:layout_width="@dimen/height_45dp"
+                        android:layout_height="@dimen/height_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:src="@mipmap/icon_not_login"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_game_state12"
+                        android:layout_width="@dimen/height_35dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/wolf_radius_ready_state_shape"
+                        android:gravity="center"
+                        android:text="已准备"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_7"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_head12"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:text="天天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_home_owner12"
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_13dp"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="房主"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_user_identify12"
+                android:layout_width="@dimen/height_15dp"
+                android:layout_height="@dimen/height_15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/wolf_radius_shape"
+                android:gravity="center"
+                android:text="民"
+                android:textColor="@color/white"
+                android:textSize="@dimen/height_9dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_380dp"
+        android:layout_toLeftOf="@id/ll_wolf_right"
+        android:layout_toRightOf="@id/ll_wolf_left">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_wolf_ready_game"
+            android:layout_width="@dimen/height_130dp"
+            android:layout_height="@dimen/height_50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/wolf_ready_game" />
+
+        <LinearLayout
+            android:id="@+id/ll_send_message_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_wolf_ready_game"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_12dp"
+            android:paddingRight="@dimen/height_12dp">
+
+            <ImageView
+                android:id="@+id/iv_wolf_send_message"
+                android:layout_width="@dimen/height_60dp"
+                android:layout_height="@dimen/height_50dp"
+                android:src="@drawable/wolf_send_message_selector" />
+
+            <ImageView
+                android:id="@+id/iv_wolf_send_voice"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_weight="1"
+                android:src="@drawable/wolf_send_voice_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_47dp"
+            android:background="@color/transparent_half"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_wolf_message_edit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_wolf_kill_send_message"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:maxLines="5"
+                android:paddingLeft="@dimen/height_5dp"
+                android:paddingRight="@dimen/height_5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:id="@+id/iv_wolf_message_send"
+                android:layout_width="@dimen/height_75dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_6dp"
+                android:src="@mipmap/icon_wolf_message_send" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/key_board_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.leyou.game.widget.WolfKillClockView
+            android:id="@+id/clockView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+        </com.leyou.game.widget.WolfKillClockView>
+    </RelativeLayout>
+
+</RelativeLayout>

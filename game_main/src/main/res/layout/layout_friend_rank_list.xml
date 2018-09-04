@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_55dp"
+    android:background="@drawable/item_selector">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_win_result_head"
+        android:layout_width="@dimen/height_36dp"
+        android:layout_height="@dimen/height_36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_12dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/icon_not_login"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/icon_not_login"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/icon_not_login"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/height_11dp"
+        android:layout_toRightOf="@id/iv_win_result_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_win_result_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏玩家"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_win_result_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/height_12dp"
+        android:text="120分"
+        android:textColor="@color/black_a46"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_e9" />
+</RelativeLayout>

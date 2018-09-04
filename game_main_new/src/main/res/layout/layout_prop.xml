@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_prop_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_4dp"
+    android:layout_marginLeft="@dimen/height_6dp"
+    android:layout_marginRight="@dimen/height_6dp"
+    android:layout_marginTop="@dimen/height_4dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/height_105dp"
+        android:layout_height="@dimen/height_180dp"
+        android:background="@drawable/item_selector">
+
+        <ImageView
+            android:id="@+id/iv_prop_img"
+            android:layout_width="@dimen/height_105dp"
+            android:layout_height="@dimen/height_180dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_prop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/height_105dp"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@mipmap/icon_prop_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_3dp"
+        android:paddingTop="@dimen/height_3dp">
+
+        <LinearLayout
+            android:id="@+id/ll_prop_buy_chip"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_25dp"
+                android:padding="@dimen/height_5dp"
+                android:src="@mipmap/icon_debris" />
+
+            <TextView
+                android:id="@+id/tv_prop_chip_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/height_6dp"
+            android:layout_marginRight="@dimen/height_6dp"
+            android:background="@color/black_45" />
+
+        <LinearLayout
+            android:id="@+id/ll_prop_buy_diamond"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height_25dp"
+                android:layout_height="@dimen/height_25dp"
+                android:padding="@dimen/height_5dp"
+                android:src="@mipmap/icon_diamond_blue" />
+
+            <TextView
+                android:id="@+id/tv_prop_diamond_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

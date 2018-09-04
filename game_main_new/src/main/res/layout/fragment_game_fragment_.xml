@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.leyou.game.fragment.GameFragment_">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_change_gradually_shape">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_change_gradually_shape"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_68dp_"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
+            <!--设置的layout_scrollFlags有如下几种选项：
+                scroll: 所有想滚动出屏幕的view都需要设置这个flag
+                没有设置这个flag的view将被固定在屏幕顶部。
+                enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+                enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，
+                你的视图只能已最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+                exitUntilCollapsed: 滚动退出屏幕，最后折叠在顶端。 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--搜索栏-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_48dp"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:id="@+id/ll_game_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_28dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/height_14dp"
+                        android:layout_marginRight="@dimen/height_14dp"
+                        android:background="@drawable/ll_bg_search"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/height_15dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:src="@mipmap/icon_friend_search" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_1dp"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black_99"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.zhouwei.mzbanner.MZBannerView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_185dp"
+                    app:canLoop="true"
+                    app:open_mz_mode="false" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_11dp"
+                    android:layout_marginRight="@dimen/height_11dp"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/height_5dp"
+                    app:cardElevation="@dimen/height_3dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/height_15dp"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:layout_marginRight="@dimen/height_15dp"
+                        android:layout_marginTop="@dimen/height_7dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/height_10dp"
+                                android:text="最新上架"
+                                android:textColor="@color/black_5D"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/tv_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/height_15dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:drawablePadding="@dimen/height_5dp"
+                                android:text="更多"
+                                android:textColor="@color/blue_44"
+                                android:textSize="@dimen/text_size_14"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:layout_width="@dimen/height_7dp"
+                                android:layout_height="@dimen/height_12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/icon_arrow_right"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/game_recycler_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_10dp"
+                            android:overScrollMode="never">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/game_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/height_7dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

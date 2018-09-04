@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    tools:context="com.leyou.game.fragment.WinAwardFragment_">
+
+    <RelativeLayout
+        android:id="@+id/re_win_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/winAward"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+        <ImageButton
+            android:id="@+id/ivbtn_win_award_explain"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/height_23dp"
+            android:src="@mipmap/icon_win_award_about" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_win_toolBar"
+        android:background="@color/white_1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_winAward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/height_8dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_load_try"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_win_toolBar"
+        android:background="@color/white_1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_error" />
+    </RelativeLayout>
+
+</RelativeLayout>

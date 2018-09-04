@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text_explain_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/game_explain"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_game_explain_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_buy_diamond_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_25dp"
+        android:paddingLeft="@dimen/height_25dp"
+        android:paddingRight="@dimen/height_25dp">
+
+        <TextView
+            android:id="@+id/tv_text_explain_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:lineSpacingExtra="@dimen/height_3dp"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="15"
+            android:text="text plain"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11"
+            android:scrollbars="vertical"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

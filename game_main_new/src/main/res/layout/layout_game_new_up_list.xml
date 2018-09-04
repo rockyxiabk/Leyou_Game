@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_game_icon"
+        android:layout_width="@dimen/height_50dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/height_11dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/ic_launcher"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="@dimen/height_10dp" />
+
+</LinearLayout>

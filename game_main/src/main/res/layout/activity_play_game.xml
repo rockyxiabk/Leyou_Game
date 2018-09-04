@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.activity.PlayGameActivity">
+
+    <com.tamic.jswebview.view.ProgressBarWebView
+        android:id="@+id/progressbar_webView"
+        style="@style/NumberProgressBar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.tamic.jswebview.view.ProgressBarWebView>
+
+    <RelativeLayout
+        android:id="@+id/re_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_splash" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_80dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminateDrawable="@drawable/progress_style_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="游戏加载中..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

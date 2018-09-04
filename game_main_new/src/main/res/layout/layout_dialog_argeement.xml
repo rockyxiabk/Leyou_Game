@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:layout_marginBottom="@dimen/height_30dp"
+        android:background="@drawable/ll_bg_game"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:gravity="center"
+            android:text="@string/game_explain"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20" />
+
+        <com.leyou.game.widget.CustomWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_300dp"
+            android:layout_marginTop="@dimen/height_26dp">
+
+        </com.leyou.game.widget.CustomWebView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_size_20"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_14dp"
+            android:paddingRight="@dimen/height_14dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:background="@drawable/btn_exit_bg_selector"
+                android:text="@string/no"
+                android:textColor="@color/black_5D"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_weight="4"
+                android:background="@drawable/btn_radius_selector"
+                android:text="@string/i_sure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_panda_rocket"
+        android:layout_width="@dimen/height_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:src="@mipmap/icon_panda_roket" />
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_60dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_contact_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/re_item_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_selector">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_9dp"
+                android:layout_toRightOf="@+id/re_conversation_header"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_conversation_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLength="10"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_conversation_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/height_30dp"
+                    android:layout_marginTop="@dimen/height_2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="阿瑟，每年的饭卡舒服；看似浪费那我跟那首歌呢；阿瑟可能的功夫阿瑟来的快瓦罐阿克苏的后果 阿瑟活动个"
+                    android:textColor="@color/black_99"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_conversation_header"
+                android:layout_width="@dimen/height_48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_15dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_conversation_header"
+                    android:layout_width="@dimen/height_44dp"
+                    android:layout_height="@dimen/height_44dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/ic_launcher"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/ic_launcher"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImage="@mipmap/ic_launcher"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundedCornerRadius="@dimen/height_6dp" />
+
+                <com.leyou.game.widget.DragPointView
+                    android:id="@+id/tv_message_tips"
+                    android:layout_width="@dimen/height_17dp"
+                    android:layout_height="@dimen/height_17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/height_4dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="下午 17：57"
+                android:textColor="@color/black_a61"
+                android:textSize="@dimen/text_size_10" />
+
+            <ImageView
+                android:id="@+id/iv_message_not_tips"
+                android:layout_width="@dimen/height_12dp"
+                android:layout_height="@dimen/height_14dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_time"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_5dp"
+                android:src="@mipmap/icon_message_not_tips" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_e9" />
+</LinearLayout>

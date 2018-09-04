@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/height_10dp"
+    android:paddingLeft="@dimen/height_12dp"
+    android:paddingRight="@dimen/height_12dp"
+    android:paddingTop="@dimen/height_15dp">
+
+    <RelativeLayout
+        android:id="@+id/re_win_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/win_lump_view"
+            android:layout_width="@dimen/height_4dp"
+            android:layout_height="@dimen/height_13dp"
+            android:layout_centerVertical="true"
+            android:background="@color/win_black_lump" />
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_8dp"
+            android:text="赛车游戏"
+            android:textColor="@color/win_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_game_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="当前成绩：0分"
+            android:textColor="@color/win_text_color"
+            android:textSize="@dimen/text_size_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_win_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/re_win_title"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/iv_game_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_game_big_bg" />
+
+        <TextView
+            android:id="@+id/tv_game_des"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_23dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_30"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="@dimen/height_8dp"
+            android:text="阿斯顿发 阿斯顿发说水淀粉风格格哦日就韩国诶日就韩国"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_game_award_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@drawable/text_bg_shape"
+            android:gravity="center"
+            android:paddingLeft="@dimen/height_5dp"
+            android:paddingRight="@dimen/height_3dp"
+            android:paddingBottom="@dimen/height_2dp"
+            android:paddingTop="@dimen/height_2dp"
+            android:text="@string/game_award_explain"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_11" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_25dp"
+        android:layout_below="@+id/re_win_container"
+        android:layout_marginTop="@dimen/height_5dp">
+
+        <TextView
+            android:id="@+id/tv_game_charts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/game_go_charts"
+            android:textColor="@color/red_f2"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+            android:id="@+id/btn_game_play"
+            android:layout_width="@dimen/height_65dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="@string/game_start_play"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

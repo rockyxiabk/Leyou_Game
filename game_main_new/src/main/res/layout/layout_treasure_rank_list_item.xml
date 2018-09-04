@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_user_header"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_14dp"
+                    android:background="@color/transparent"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/ic_launcher"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/ic_launcher"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImage="@mipmap/ic_launcher"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundedCornerRadius="@dimen/height_5dp" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black_5D"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_treasure_attach_gain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="9"
+                    android:singleLine="true"
+                    android:text="0000000000"
+                    android:textColor="@color/red_f2"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_treasure_refresh_gain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="9"
+                    android:singleLine="true"
+                    android:text="0000000000"
+                    android:textColor="@color/blue_44"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_1" />
+</LinearLayout>

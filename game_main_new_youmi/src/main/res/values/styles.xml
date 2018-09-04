@@ -1,0 +1,127 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Toolbar Theme  Apply white arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!--Navigation icon颜色设置-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+    </style>
+
+    <style name="appStartLoad" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/white_f5</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--透明主题风格-->
+    <style name="AppThemeTr" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--加入一個新的 navigation drarwer 的風格-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--將 spinBars 屬性設定為 false-->
+        <item name="spinBars">false</item>
+        <!--設定 drawer arrow 的顏色-->
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!--自定义popUpWindow 动画展示-->
+    <style name="popWindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!--自定义popUpWindow 动画展示-->
+    <style name="popWindow_anim_style1">
+        <item name="android:windowEnterAnimation">@anim/slide_out_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/slide_in_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!--自定义popUpWindow 动画展示-->
+    <style name="popWindow_anim_style2">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!--弹窗样式-->
+    <style name="CustomBaseDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>//是否在activity之上，不改变statusbar样式
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--弹窗样式 不在activity之上-->
+    <style name="NewDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>//是否在activity之上，不改变statusbar样式
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 弹窗显示和关闭动画 Animation -->
+    <style name="iosalertdialog">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!--tabLayoutTextStyle-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <!--自定义 RatingBar-->
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_full</item>
+        <item name="android:minHeight">@dimen/height_13dp</item>
+        <item name="android:maxHeight">@dimen/height_13dp</item>
+    </style>
+
+    <!--<style name="NumberProgressBar_custom">-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="max">100</item>-->
+    <!--<item name="progress">0</item>-->
+    <!--<item name="progress_unreached_color">@color/white_f5</item>-->
+    <!--<item name="progress_reached_color">@color/blue_light</item>-->
+    <!--<item name="progress_text_visibility">invisible</item>-->
+    <!--<item name="progress_text_size">0sp</item>-->
+    <!--<item name="progress_text_color">@color/blue_light</item>-->
+    <!--<item name="progress_reached_bar_height">@dimen/height_2dp</item>-->
+    <!--<item name="progress_unreached_bar_height">@dimen/height_2dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="NumberProgressBar_custom_no_progress">-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="max">100</item>-->
+    <!--<item name="progress">0</item>-->
+    <!--<item name="progress_unreached_color">@color/white_f5</item>-->
+    <!--<item name="progress_reached_color">@color/blue_light</item>-->
+    <!--<item name="progress_text_visibility">invisible</item>-->
+    <!--<item name="progress_text_size">0sp</item>-->
+    <!--<item name="progress_text_color">@color/blue_light</item>-->
+    <!--<item name="progress_reached_bar_height">0dp</item>-->
+    <!--<item name="progress_unreached_bar_height">0dp</item>-->
+    <!--</style>-->
+</resources>

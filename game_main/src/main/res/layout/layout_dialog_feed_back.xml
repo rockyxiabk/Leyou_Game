@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/mine_feedback"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_feedback_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_feedback_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <EditText
+            android:id="@+id/et_feedback_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:background="@drawable/dialog_input_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/feedback_title"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/height_10dp"
+            android:textColor="@color/black_a46"
+            android:textColorHint="@color/black_bb"
+            android:textSize="@dimen/text_size_11" />
+
+        <EditText
+            android:id="@+id/et_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_140dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@drawable/dialog_input_shape"
+            android:gravity="left"
+            android:hint="@string/feedback_content"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:padding="@dimen/height_10dp"
+            android:textColor="@color/black_a46"
+            android:textColorHint="@color/black_bb"
+            android:textSize="@dimen/text_size_11" />
+
+        <EditText
+            android:id="@+id/et_feedback_contact_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@drawable/dialog_input_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/feedback_phone_qq"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/height_10dp"
+            android:textColor="@color/black_a46"
+            android:textColorHint="@color/black_bb"
+            android:textSize="@dimen/text_size_11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dialog_feedback_list"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_27dp"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_23dp">
+
+        <Button
+            android:id="@+id/btn_feedback_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+</RelativeLayout>

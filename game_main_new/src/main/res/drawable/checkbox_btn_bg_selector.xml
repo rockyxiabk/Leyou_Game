@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <solid android:color="@color/white_ea" />
+        </shape>
+    </item>
+
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <gradient android:endColor="@color/purple_74" android:startColor="@color/blue_44" />
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <solid android:color="@color/white_ea" />
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <gradient android:endColor="@color/purple_74" android:startColor="@color/blue_44" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <gradient android:endColor="@color/purple_74" android:startColor="@color/blue_44" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="@dimen/height_25dp" />
+            <gradient android:endColor="@color/purple_74" android:startColor="@color/blue_44" />
+        </shape>
+    </item>
+</selector>

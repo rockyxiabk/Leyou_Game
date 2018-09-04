@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomRightRadius="@dimen/height_10dp"
+        android:topRightRadius="@dimen/height_10dp" />
+    <solid android:color="@color/wolf_role_head_bg"/>
+
+</shape>

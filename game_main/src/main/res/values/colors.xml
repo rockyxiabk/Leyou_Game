@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8045d0</color>
+    <color name="colorPrimaryDark">#8045d0</color>
+    <color name="colorAccent">#f24e4e</color>
+
+
+    <color name="theme_color">#8045d0</color>
+    <color name="theme_color_touch">#703cb6</color>
+    <color name="theme_color_un_touch">#b38fe3</color>
+    <color name="theme_color_dialog">#d9c7f1</color>
+    <!--win-->
+    <color name="win_text_color">#333333</color>
+    <color name="win_black_lump">#303030</color>
+    <!-- 分割线色值 -->
+    <color name="split_color">#e9e9e9</color>
+    <!-- 透明色值 -->
+    <color name="transparent">#00000000</color>
+    <color name="shadow_guide_view">#cc222222</color>
+    <color name="transparent_30">#30000000</color>
+    <color name="transparent_40">#40000000</color>
+    <color name="transparent_half">#66000000</color>
+    <!-- 黑白色值 -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_f5">#f5f5f5</color>
+    <color name="white_e5">#e5e5e5</color>
+    <color name="white_e6">#e6e6e6</color>
+    <color name="white_e9">#e9e9e9</color>
+    <color name="white_e1">#e1e1e4</color>
+    <color name="white_d9">#d9d9d9</color>
+    <color name="white_purple_f9">#f9f4ff</color>
+    <color name="white_d1">#d1d1d1</color>
+    <color name="white_d2">#d2d2d2</color>
+    <color name="white_a3">#a3a3a3</color>
+    <color name="white_40">#40FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_0b">#0b0b0b</color>
+    <color name="black_15">#151515</color>
+    <color name="black_a46">#464646</color>
+    <color name="black_a58">#585858</color>
+    <color name="black_a61">#616161</color>
+    <color name="black_7c">#7c7c7c</color>
+    <color name="black_99">#999999</color>
+    <color name="black_ac">#acacac</color>
+    <color name="black_cc">#cccccc</color>
+    <color name="black_30">#b2b2b2</color>
+    <color name="black_bb">#bbbbbb</color>
+    <color name="black_a33">#333333</color>
+    <color name="black_45">#455d7a</color>
+    <color name="black_12">#124366</color>
+    <color name="palm_a4">#a4682a</color>
+    <color name="palm_a9">#a9763a</color>
+    <color name="blue_1c">#1c6b65</color>
+    <color name="blue_41">#418675</color>
+    <color name="purple_45">#45049c</color>
+    <color name="wolf_custom_radius">#10b08f</color>
+    <color name="wolf_touch_radius">#05856b</color>
+    <color name="wolf_role_head_bg">#9e90f4</color>
+    <color name="wolf_game_ready_bg">#f9bc03</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="red">#FF0000</color>
+    <color name="red_f2">#f24e4e</color>
+    <color name="red_touch">#d04545</color>
+    <color name="red_30f2">#4df24e4e</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_a03">#032cfc</color>
+    <color name="blue_4c">#4c76ff</color>
+    <color name="blue_304c">#4d3e5cfe</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="yellow_week">#FDF9F1</color>
+    <color name="yellow_lemon">#FFFACD</color>
+    <color name="gray_light">#DFDFDF</color>
+    <color name="gray_white">#F5F5F5</color>
+    <color name="gray_normal">#FAFAFA</color>
+    <color name="gray_dcdcdc">#dcdcdc</color>
+    <color name="gray_gray">#D9D9D9</color>
+    <color name="gray_slate">#708090</color>
+    <color name="blue_light">#0083FF</color>
+</resources>

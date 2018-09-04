@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.activity.MainActivity">
+
+    <com.leyou.game.widget.IndexViewPager
+        android:id="@+id/viewPager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/height_50dp">
+
+    </com.leyou.game.widget.IndexViewPager>
+
+    <include
+        layout="@layout/layout_main_footer"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/re_floatView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/gifImageView"
+            android:layout_width="@dimen/height_50dp"
+            android:layout_height="@dimen/height_50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:actualImageScaleType="focusCrop"
+            app:failureImage="@mipmap/icon_not_login"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@mipmap/icon_not_login"
+            app:placeholderImageScaleType="centerCrop"
+            app:retryImage="@mipmap/icon_not_login"
+            app:retryImageScaleType="centerCrop"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/white_ec"
+            app:roundingBorderWidth="@dimen/height_4dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

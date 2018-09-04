@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@mipmap/icon_close" />
+
+    <ImageView
+        android:id="@+id/iv_mb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/height_35dp"
+        android:layout_marginRight="@dimen/height_35dp"
+        android:src="@mipmap/icon_diamond_convert_mb" />
+
+    <ImageView
+        android:id="@+id/iv_btn"
+        android:layout_width="@dimen/height_150dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/height_25dp"
+        android:src="@mipmap/icon_diamond_convert_button" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_66dp"
+        android:background="@drawable/dialog_top_radius_bg">
+
+        <TextView
+            android:id="@+id/tv_text_explain_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="系统公告"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:id="@+id/tv_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_2dp"
+            android:gravity="center"
+            android:text="09-09 18：04"
+            android:textColor="@color/blue_42"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_buy_diamond_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_25dp"
+        android:paddingLeft="@dimen/height_25dp"
+        android:paddingRight="@dimen/height_25dp">
+
+        <TextView
+            android:id="@+id/tv_text_explain_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:lineSpacingExtra="@dimen/height_3dp"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:text="text plain"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_game_explain_close"
+        android:layout_width="@dimen/height_25dp"
+        android:layout_height="@dimen/height_25dp"
+        android:layout_below="@id/ll_dialog_buy_diamond_list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_14dp"
+        android:src="@mipmap/icon_close" />
+
+
+</RelativeLayout>

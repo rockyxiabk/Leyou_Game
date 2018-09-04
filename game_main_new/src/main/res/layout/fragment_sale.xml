@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_1"
+    tools:context="com.leyou.game.fragment.mine.SaleFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_cb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_42dp"
+        android:layout_marginTop="@dimen/height_1dp"
+        android:background="@color/white_1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/height_12dp"
+        android:paddingRight="@dimen/height_12dp">
+
+        <CheckBox
+            android:id="@+id/cb_0"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_btn_bg_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_11" />
+
+        <CheckBox
+            android:id="@+id/cb_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="1000以内"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_11" />
+
+        <CheckBox
+            android:id="@+id/cb_2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="5000以内"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_11" />
+
+        <CheckBox
+            android:id="@+id/cb_3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="10000以内"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_11" />
+
+        <CheckBox
+            android:id="@+id/cb_4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="10000以上"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/text_size_11" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_exchange_sale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_cb"
+        android:layout_marginTop="@dimen/height_1dp"
+        android:background="@color/white_1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_exchange_sale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/height_7dp"
+            android:paddingRight="@dimen/height_7dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_exchange_sale_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_cb"
+        android:background="@color/white_1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_error" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_exchange_sale_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_cb"
+        android:background="@color/white_1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_no_trade" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_66dp"
+        android:background="@drawable/dialog_top_radius_bg">
+
+        <TextView
+            android:id="@+id/tv_message_prize_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="中奖信息"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_message_prize_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="09-09 18：04"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+        <ImageView
+            android:id="@+id/iv_message_prize_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_buy_diamond_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_25dp"
+        android:paddingLeft="@dimen/height_25dp"
+        android:paddingRight="@dimen/height_25dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <TextView
+            android:id="@+id/tv_prize_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="游戏名称："
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/tv_prize_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_3dp"
+            android:singleLine="true"
+            android:text="排        名："
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/tv_prize_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_3dp"
+            android:singleLine="true"
+            android:text="奖品名称："
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/tv_prize_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_3dp"
+            android:singleLine="true"
+            android:text="奖品价值：0元"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_13" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginTop="@dimen/height_23dp"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+
+    </LinearLayout>
+</RelativeLayout>

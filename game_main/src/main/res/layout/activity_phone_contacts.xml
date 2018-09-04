@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    tools:context="com.leyou.game.activity.friend.PhoneContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_order_pay_back"
+            android:gravity="center"
+            android:text="@string/friend_contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/re_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_letter_show"
+            android:layout_width="@dimen/height_72dp"
+            android:layout_height="@dimen/height_72dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_letter_shape"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30"
+            android:visibility="gone" />
+
+        <com.leyou.game.widget.CustomSlideBar
+            android:id="@+id/slideBar"
+            android:layout_width="@dimen/height_20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/height_20dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:background="@color/transparent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_no_authority"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_error_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:drawablePadding="@dimen/height_20dp"
+            android:drawableTop="@mipmap/icon_friend_no_authority"
+            android:gravity="center"
+            android:text="无法获取手机联系人数据,去设置吧～"
+            android:textColor="@color/black_a61"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="@dimen/height_180dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_below="@id/tv_error_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_36dp"
+            android:background="@drawable/btn_bg_treasure_selector"
+            android:text="打开设置->应用程序"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+    </RelativeLayout>
+</RelativeLayout>

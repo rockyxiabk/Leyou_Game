@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.DeleteCrowdMemberActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:gravity="center"
+            android:text="删除好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_6dp"
+            android:background="@drawable/text_custom_bg"
+            android:gravity="center"
+            android:padding="@dimen/height_6dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_choose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_47dp"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_e9" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_letter_show"
+            android:layout_width="@dimen/height_72dp"
+            android:layout_height="@dimen/height_72dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_letter_shape"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30"
+            android:visibility="gone" />
+
+        <com.leyou.game.widget.CustomSlideBar
+            android:id="@+id/slideBar"
+            android:layout_width="@dimen/height_20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/height_80dp"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:background="@color/transparent"
+            android:paddingTop="@dimen/height_5dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/re_award_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_65dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/height_12dp"
+    android:paddingRight="@dimen/height_12dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_award_img"
+        android:layout_width="@dimen/height_45dp"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/ic_launcher"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="@dimen/height_1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:layout_marginRight="@dimen/height_6dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_award_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王者荣耀    一等奖"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_award_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="iPhone 7 Plus 128G全网通4G手机一部，iPhone 7 Plus 128G全网通4G手机一部"
+            android:textColor="@color/black_0b"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_award_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="获奖时间：2017-06-15"
+            android:textColor="@color/black_a61"
+            android:textSize="@dimen/text_size_10" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/height_85dp"
+        android:layout_height="@dimen/height_35dp">
+
+        <TextView
+            android:id="@+id/tv_award_state"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_award_state_bg_selector"
+            android:gravity="center"
+            android:text="填写收货地址"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_tips_is_read"
+            android:layout_width="@dimen/height_10dp"
+            android:layout_height="@dimen/height_10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/text_bar_tips_shape"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

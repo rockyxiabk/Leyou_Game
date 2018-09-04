@@ -1,0 +1,323 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.fragment.TreasureFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:gravity="center"
+            android:text="@string/treasury"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_treasure_play_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_6dp"
+            android:background="@drawable/text_custom_bg"
+            android:gravity="center_vertical"
+            android:padding="@dimen/height_6dp"
+            android:text="@string/treasure_play_explain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_treasure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_6dp"
+                    android:background="@color/white_f5">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_treasure_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_selector"
+                        android:paddingLeft="@dimen/height_12dp"
+                        android:paddingRight="@dimen/height_12dp">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/iv_treasure_user_header"
+                            android:layout_width="@dimen/height_47dp"
+                            android:layout_height="@dimen/height_47dp"
+                            android:layout_centerVertical="true"
+                            fresco:actualImageScaleType="focusCrop"
+                            fresco:fadeDuration="500"
+                            fresco:failureImage="@mipmap/icon_not_login"
+                            fresco:failureImageScaleType="centerCrop"
+                            fresco:placeholderImage="@mipmap/icon_not_login"
+                            fresco:placeholderImageScaleType="centerCrop"
+                            fresco:retryImage="@mipmap/icon_not_login"
+                            fresco:retryImageScaleType="centerCrop"
+                            fresco:roundAsCircle="true" />
+
+                        <TextView
+                            android:id="@+id/tv_treasure_title_my_worker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/height_25dp"
+                            android:layout_toRightOf="@id/iv_treasure_user_header"
+                            android:gravity="center_vertical"
+                            android:text="我的矿工(0/10)"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <ImageView
+                            android:layout_width="@dimen/height_7dp"
+                            android:layout_height="@dimen/height_12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_next_level" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_6dp"
+                    android:background="@color/white_f5">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_15dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <View
+                        android:layout_width="@dimen/height_4dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/height_3dp"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:background="@color/win_black_lump" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_5dp"
+                        android:text="@string/treasure_grade"
+                        android:textColor="@color/black_a33"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_treasure_protect_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black_a33"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_treasure_refresh"
+                        android:layout_width="@dimen/height_72dp"
+                        android:layout_height="@dimen/height_25dp"
+                        android:background="@drawable/btn_bg_selector"
+                        android:gravity="center"
+                        android:text="@string/enter_treasure"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_201dp"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_marginRight="@dimen/height_12dp"
+                    android:layout_marginTop="@dimen/height_14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_treasury_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_201dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_treasury_bg_one" />
+
+                    <ImageView
+                        android:id="@+id/iv_treasury_attach_animal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_201dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/iv_treasure_gif"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_201dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_treasury_bg_one" />
+
+                    <TextView
+                        android:id="@+id/tv_treasure_grade"
+                        android:layout_width="@dimen/height_72dp"
+                        android:layout_height="@dimen/height_19dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/height_27dp"
+                        android:background="@drawable/text_bg_shape"
+                        android:gravity="center"
+                        android:text="宝窟等级:0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_10"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_treasure_refresh_time"
+                        android:layout_width="@dimen/height_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:id="@+id/re_treasure_container_chips"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_60dp">
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_15dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <View
+                        android:layout_width="@dimen/height_4dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/height_3dp"
+                        android:layout_marginTop="@dimen/height_3dp"
+                        android:background="@color/win_black_lump" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_5dp"
+                        android:text="@string/treasure_employ_worker"
+                        android:textColor="@color/black_a33"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_treasure_refresh_worker"
+                        android:layout_width="@dimen/height_72dp"
+                        android:layout_height="@dimen/height_25dp"
+                        android:background="@drawable/btn_bg_selector"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/treasure_refresh_worker"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_100dp"
+                    android:layout_marginTop="@dimen/height_14dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/height_4dp"
+                    android:paddingTop="@dimen/height_4dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_treasure_employ_worker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/height_7dp"
+                        android:paddingRight="@dimen/height_12dp"
+                        android:scrollbars="horizontal">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/height_12dp"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/treasure_refresh_time"
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_11" />
+
+                    <com.leyou.game.widget.CountDownTimeTextView
+                        android:id="@+id/tv_treasure_employ_worker_extract_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:text="45:34"
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

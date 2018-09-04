@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/height_240dp"
+        android:layout_height="@dimen/height_300dp"
+        android:background="@mipmap/icon_panda_prize_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_45dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您获得一等奖"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:text="恭喜您获得一等奖"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_to_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_4dp"
+                android:background="@drawable/text_radius_wirte_bg_selector"
+                android:padding="@dimen/height_3dp"
+                android:text="点击领取"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_11"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/height_34dp"
+        android:layout_height="@dimen/height_34dp"
+        android:src="@mipmap/icon_close" />
+
+</LinearLayout>

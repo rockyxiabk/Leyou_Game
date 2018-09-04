@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ll_bg_game"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:layout_marginRight="@dimen/height_10dp"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:background="@drawable/win_rank_item_radius_bg_shape">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingLeft="@dimen/height_15dp"
+            android:paddingTop="@dimen/height_5dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_7dp"
+        android:layout_marginLeft="@dimen/height_14dp"
+        android:layout_marginRight="@dimen/height_14dp"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height_20dp"
+                android:layout_height="@dimen/height_20dp"
+                android:src="@mipmap/icon_exit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:text="@string/exit"
+                android:textColor="@color/orange_B5"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/height_1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/height_5dp"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:background="@color/blue_44" />
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/height_20dp"
+                android:layout_height="@dimen/height_20dp"
+                android:src="@mipmap/icon_share_game" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:text="@string/share"
+                android:textColor="@color/blue_36"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

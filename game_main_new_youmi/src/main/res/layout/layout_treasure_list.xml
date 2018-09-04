@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_57dp"
+    android:layout_height="@dimen/height_92dp"
+    android:layout_marginRight="@dimen/height_3dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_treasure_worker_img"
+        android:layout_width="@dimen/height_55dp"
+        android:layout_height="@dimen/height_66dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_worker_default" />
+
+    <LinearLayout
+        android:id="@+id/ll_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/height_2dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_phy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:layout_marginRight="@dimen/height_5dp"
+                app:rcBackgroundColor="@color/blue_304c"
+                app:rcMax="100"
+                app:rcProgressColor="@color/blue_4c"
+                app:rcRadius="@dimen/height_4dp" />
+
+            <ImageView
+                android:layout_width="@dimen/height_11dp"
+                android:layout_height="@dimen/height_12dp"
+                android:src="@mipmap/icon_worker_phy" />
+
+            <TextView
+                android:id="@+id/tv_treasure_worker_phy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="43"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_power"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:layout_marginRight="@dimen/height_5dp"
+                app:rcBackgroundColor="@color/red_30f2"
+                app:rcMax="100"
+                app:rcProgressColor="@color/red_f2"
+                app:rcRadius="@dimen/height_4dp" />
+
+            <ImageView
+                android:layout_width="@dimen/height_11dp"
+                android:layout_height="@dimen/height_12dp"
+                android:src="@mipmap/icon_worker_fight" />
+
+            <TextView
+                android:id="@+id/tv_treasure_worker_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_new_worker"
+        android:layout_width="@dimen/height_55dp"
+        android:layout_height="@dimen/height_66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_6dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

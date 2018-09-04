@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ll_bg_game"
+    android:orientation="vertical"
+    android:padding="@dimen/height_14dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_root"
+        android:layout_width="@dimen/height_254dp"
+        android:layout_height="@dimen/height_380dp"
+        android:background="@mipmap/icon_prize_share">
+
+        <TextView
+            android:id="@+id/tv_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_marginLeft="@dimen/height_26dp"
+            android:layout_marginRight="@dimen/height_26dp"
+            android:layout_marginTop="@dimen/height_26dp"
+            android:background="@mipmap/icon_prize_shar_title_bg"
+            android:gravity="center"
+            android:text="我中奖了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_prize_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:text="刚刚提现"
+            android:textColor="@color/red_f2"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/re_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:layout_marginRight="@dimen/height_10dp"
+            android:layout_marginTop="@dimen/height_10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_win_prize_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:fadeDuration="500"
+                fresco:failureImage="@mipmap/icon_default_big"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/icon_default_big"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:retryImage="@mipmap/icon_default_big"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="@dimen/height_10dp" />
+
+            <com.leyou.game.widget.TextViewRotate45
+                android:id="@+id/tv_nick_name"
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_win_result_nickname"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_40dp"
+            android:background="@drawable/ll_bg_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:gravity="center"
+                android:text="长按识别二维码\n一起来赚钱"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:layout_width="@dimen/height_72dp"
+                android:layout_height="@dimen/height_72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:src="@mipmap/icon_share_erweima" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

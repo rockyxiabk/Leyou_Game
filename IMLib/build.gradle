@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 2017
+        versionName "2.8.14 Stable"
+    }
+}
+
+dependencies {
+    api files('libs/Rong_IMLib.jar')
+}

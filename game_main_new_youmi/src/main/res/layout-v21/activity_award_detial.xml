@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.AwardDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_detail_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_detail_back"
+            android:text="@string/mine_win_result_award_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_7dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_14dp"
+            app:cardCornerRadius="@dimen/height_10dp"
+            app:cardElevation="@dimen/height_5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_award_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_169dp"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    app:actualImageScaleType="focusCrop"
+                    app:failureImage="@mipmap/icon_default_big"
+                    app:failureImageScaleType="centerCrop"
+                    app:placeholderImage="@mipmap/icon_default_big"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:retryImage="@mipmap/icon_default_big"
+                    app:retryImageScaleType="centerCrop"
+                    app:roundAsCircle="false"
+                    app:roundBottomLeft="false"
+                    app:roundBottomRight="false"
+                    app:roundTopLeft="true"
+                    app:roundTopRight="true"
+                    app:roundedCornerRadius="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp">
+
+                    <TextView
+                        android:id="@+id/tv_award_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="王者荣耀"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_award_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="一等奖"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_award_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/height_15dp"
+                        android:singleLine="true"
+                        android:text="2017-06-15"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_7dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            app:cardCornerRadius="@dimen/height_10dp"
+            app:cardElevation="@dimen/height_5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/with_cash_name"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_address_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:background="@drawable/et_input_shape"
+                        android:gravity="center_vertical"
+                        android:hint="收件人姓名"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:textColor="@color/blue_44"
+                        android:textColorHint="@color/black_ba"
+                        android:textSize="@dimen/text_size_14" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_ee" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/person_phone_number"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_address_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:background="@drawable/et_input_shape"
+                        android:hint="收货人联系方式"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="11"
+                        android:textColor="@color/blue_44"
+                        android:textColorHint="@color/black_ba"
+                        android:textSize="@dimen/text_size_14" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_ee" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/award_mail"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_address_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:background="@drawable/et_input_shape"
+                        android:hint="@string/award_mail_hint"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="@color/black_5D"
+                        android:textColorHint="@color/black_ba"
+                        android:textSize="@dimen/text_size_14" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_ee" />
+
+                <RelativeLayout
+                    android:id="@+id/re_prize_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/award_address"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/et_address_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:layout_marginRight="@dimen/height_5dp"
+                        android:background="@drawable/et_input_shape"
+                        android:ellipsize="middle"
+                        android:hint="@string/award_address_hint"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="30"
+                        android:textColor="@color/blue_44"
+                        android:textColorHint="@color/black_ba"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_ee" />
+
+                <RelativeLayout
+                    android:id="@+id/re_express_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/award_courier_company"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_express_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_ee" />
+
+                <RelativeLayout
+                    android:id="@+id/re_express_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="@string/award_express_no"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_express_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_80dp"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_address_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@drawable/btn_radius_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+</LinearLayout>

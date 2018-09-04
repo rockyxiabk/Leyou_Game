@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half"
+    tools:context="com.leyou.game.activity.PictureDetailActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:failureImageScaleType="fitCenter"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:retryImage="@mipmap/ic_launcher"
+        fresco:retryImageScaleType="fitCenter" />
+</RelativeLayout>

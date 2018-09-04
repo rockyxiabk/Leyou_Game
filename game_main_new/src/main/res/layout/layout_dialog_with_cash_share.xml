@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_bg_game"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:text="分享后提交申请"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_20dp"
+            android:layout_marginTop="@dimen/height_14dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_item_wx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_5dp"
+                android:paddingLeft="@dimen/height_2dp"
+                android:paddingRight="@dimen/height_2dp"
+                android:paddingTop="@dimen/height_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/height_50dp"
+                    android:layout_height="@dimen/height_50dp"
+                    android:src="@drawable/umeng_socialize_wechat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:text="@string/umeng_socialize_text_weixin_key"
+                    android:textColor="@color/black_5D" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_wx_zone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_5dp"
+                android:paddingLeft="@dimen/height_2dp"
+                android:paddingRight="@dimen/height_2dp"
+                android:paddingTop="@dimen/height_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/height_50dp"
+                    android:layout_height="@dimen/height_50dp"
+                    android:src="@drawable/umeng_socialize_wxcircle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:text="@string/umeng_socialize_text_weixin_circle_key"
+                    android:textColor="@color/black_5D" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_qq_zone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_5dp"
+                android:paddingLeft="@dimen/height_2dp"
+                android:paddingRight="@dimen/height_2dp"
+                android:paddingTop="@dimen/height_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/height_50dp"
+                    android:layout_height="@dimen/height_50dp"
+                    android:src="@drawable/umeng_socialize_qzone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:text="@string/umeng_socialize_text_qq_zone_key"
+                    android:textColor="@color/black_5D" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/height_34dp"
+        android:layout_height="@dimen/height_34dp"
+        android:layout_below="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_8dp"
+        android:src="@mipmap/icon_close" />
+</RelativeLayout>

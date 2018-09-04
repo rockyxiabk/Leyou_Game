@@ -1,0 +1,99 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_5dp"
+    android:layout_marginLeft="@dimen/height_11dp"
+    android:layout_marginRight="@dimen/height_11dp"
+    android:layout_marginTop="@dimen/height_6dp"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/height_5dp"
+    app:cardElevation="@dimen/height_3dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_game_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_185dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:actualImageScaleType="focusCrop"
+            app:failureImage="@mipmap/icon_default_big"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@mipmap/icon_default_big"
+            app:placeholderImageScaleType="centerCrop"
+            app:retryImage="@mipmap/icon_default_big"
+            app:retryImageScaleType="centerCrop"
+            app:roundAsCircle="false"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            app:roundTopLeft="true"
+            app:roundTopRight="true"
+            app:roundedCornerRadius="@dimen/height_5dp" />
+
+        <TextView
+            android:id="@+id/tv_award_explain"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:background="@drawable/text_radius_left_selector"
+            android:gravity="center"
+            android:text="@string/game_award_explain"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <RelativeLayout
+            android:id="@+id/re_game_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_55dp"
+            android:layout_below="@id/iv_game_pic"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_game_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:text="当前成绩：90"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_13" />
+
+            <Button
+                android:id="@+id/btn_start_game"
+                android:layout_width="@dimen/height_92dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:background="@drawable/btn_radius_selector"
+                android:text="@string/game_start_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_game_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:paddingTop="@dimen/height_2dp"
+                android:paddingBottom="@dimen/height_2dp"
+                android:layout_toLeftOf="@id/btn_start_game"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/game_go_charts"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_13" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

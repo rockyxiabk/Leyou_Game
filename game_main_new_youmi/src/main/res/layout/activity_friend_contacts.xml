@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.FriendContactsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/friend_my_contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_friend_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_57dp"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/height_12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_43dp"
+                        android:layout_height="@dimen/height_43dp"
+                        android:src="@mipmap/icon_friend_contacts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_12dp"
+                        android:text="@string/friend_phone_contacts"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_friend_new_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_57dp"
+            android:layout_marginTop="@dimen/height_1dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_57dp"
+                android:background="@drawable/item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/height_12dp">
+
+                <ImageView
+                    android:id="@+id/iv_new_friend"
+                    android:layout_width="@dimen/height_43dp"
+                    android:layout_height="@dimen/height_43dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_friend_new_friend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_toRightOf="@id/iv_new_friend"
+                    android:text="@string/friend_new_friend"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_new_friend_tips_count"
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_14dp"
+                    android:background="@drawable/text_message_tips_shape"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/re_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_letter_show"
+            android:layout_width="@dimen/height_72dp"
+            android:layout_height="@dimen/height_72dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_letter_shape"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30"
+            android:visibility="gone" />
+
+        <com.leyou.game.widget.CustomSlideBar
+            android:id="@+id/slideBar"
+            android:layout_width="@dimen/height_20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/transparent" />
+    </FrameLayout>
+</LinearLayout>

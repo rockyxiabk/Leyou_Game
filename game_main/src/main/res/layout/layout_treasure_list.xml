@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_63dp"
+    android:layout_height="@dimen/height_92dp"
+    android:layout_marginLeft="@dimen/height_5dp"
+    android:background="@drawable/treasure_bg_worker_red_shape">
+
+    <ImageView
+        android:id="@+id/iv_treasure_worker_img"
+        android:layout_width="@dimen/height_55dp"
+        android:layout_height="@dimen/height_66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_6dp"
+        android:src="@mipmap/icon_default" />
+
+    <LinearLayout
+        android:id="@+id/ll_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/height_2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_phy"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_4dp"
+                android:layout_weight="9"
+                app:rcBackgroundColor="@color/blue_304c"
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                app:rcProgressColor="@color/blue_4c"
+                app:rcRadius="@dimen/height_2dp" />
+
+            <TextView
+                android:id="@+id/tv_treasure_worker_phy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minWidth="@dimen/height_15dp"
+                android:text="43"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/round_pr_power"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_4dp"
+                android:layout_weight="1"
+                app:rcBackgroundColor="@color/red_30f2"
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                app:rcProgressColor="@color/red_f2"
+                app:rcRadius="@dimen/height_4dp" />
+
+            <TextView
+                android:id="@+id/tv_treasure_worker_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minWidth="@dimen/height_15dp"
+                android:text="100"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_7" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_new_worker"
+        android:layout_width="@dimen/height_55dp"
+        android:layout_height="@dimen/height_66dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/height_6dp" />
+
+</RelativeLayout>

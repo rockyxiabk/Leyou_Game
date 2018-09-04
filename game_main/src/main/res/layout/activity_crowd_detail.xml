@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.FriendDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_crowd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_order_pay_back"
+            android:gravity="center"
+            android:text="@string/friend_detail"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_f5"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_crowd_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/re_set_crowd_remark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_crowd_nick_name"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_crowd_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/height_15dp"
+                        android:text="@string/friend_crowd_nick_name"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/black_99"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/height_7dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_next_level" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_e9" />
+
+            <RelativeLayout
+                android:id="@+id/re_set_my_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_crowd_my_nick_name"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_crowd_my_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black_99"
+                        android:textSize="@dimen/text_size_14" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_crowd_message_no_tips"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle_message_tips"
+                        android:layout_width="@dimen/height_44dp"
+                        android:layout_height="@dimen/height_23dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_toggle_off"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_e9" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_conversation_top"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle_conversation_top"
+                        android:layout_width="@dimen/height_44dp"
+                        android:layout_height="@dimen/height_23dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/icon_toggle_off"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_10dp"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp"
+                android:paddingTop="@dimen/height_10dp">
+
+                <Button
+                    android:id="@+id/btn_logout_crowd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_42dp"
+                    android:background="@drawable/btn_bg_red_selector"
+                    android:text="@string/friend_crowd_logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

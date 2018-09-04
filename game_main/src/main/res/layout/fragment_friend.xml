@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.fragment.FriendFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/friend_my_contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_to_crowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_6dp"
+            android:background="@drawable/text_custom_bg"
+            android:gravity="center"
+            android:padding="@dimen/height_6dp"
+            android:text="@string/friend_start_crowd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_friend_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_57dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/height_12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_43dp"
+                            android:layout_height="@dimen/height_43dp"
+                            android:src="@mipmap/icon_friend_message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_12dp"
+                            android:text="@string/mine_message"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <com.leyou.game.widget.DragPointView
+                            android:id="@+id/tv_message_tips_count"
+                            android:layout_width="@dimen/height_20dp"
+                            android:layout_height="@dimen/height_20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/height_12dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_f5" />
+
+                <LinearLayout
+                    android:id="@+id/ll_friend_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_57dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/height_1dp"
+                        android:background="@drawable/item_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/height_12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_43dp"
+                            android:layout_height="@dimen/height_43dp"
+                            android:src="@mipmap/icon_friend_rank" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_12dp"
+                            android:text="@string/friend_rank"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_f5" />
+
+                <LinearLayout
+                    android:id="@+id/ll_friend_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_57dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/height_12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_43dp"
+                            android:layout_height="@dimen/height_43dp"
+                            android:src="@mipmap/icon_friend_my_contacts" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_12dp"
+                            android:text="@string/friend_my_contacts"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <com.leyou.game.widget.DragPointView
+                            android:id="@+id/tv_friend_tips_count"
+                            android:layout_width="@dimen/height_20dp"
+                            android:layout_height="@dimen/height_20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/height_12dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_7dp"
+                android:background="@color/white_f5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/re_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_f5"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_conversation_null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_30dp"
+                android:paddingTop="@dimen/height_30dp">
+
+                <ImageView
+                    android:layout_width="@dimen/height_180dp"
+                    android:layout_height="@dimen/height_120dp"
+                    android:src="@mipmap/icon_friend_conversation_list_null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20dp"
+                    android:text="@string/conversation_list_null" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1" />
+</LinearLayout>

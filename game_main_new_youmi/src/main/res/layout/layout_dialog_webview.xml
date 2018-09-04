@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/height_10dp"
+    android:layout_marginRight="@dimen/height_10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:background="@drawable/ll_bg_game"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text_webView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:text="@string/game_explain"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20" />
+
+        <com.leyou.game.widget.CustomWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_26dp">
+
+        </com.leyou.game.widget.CustomWebView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_14dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_panda_rocket"
+        android:layout_width="@dimen/height_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:src="@mipmap/icon_panda_roket" />
+
+    <ImageView
+        android:id="@+id/iv_webView_close"
+        android:layout_width="@dimen/height_34dp"
+        android:layout_height="@dimen/height_34dp"
+        android:layout_below="@id/ll_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_14dp"
+        android:src="@mipmap/icon_close" />
+</RelativeLayout>

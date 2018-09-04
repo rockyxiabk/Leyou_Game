@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.fragment.friend.FriendRankFragment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_win_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_7dp"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                app:cardCornerRadius="@dimen/height_10dp"
+                app:cardElevation="@dimen/height_5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_7dp"
+                        android:gravity="center"
+                        android:text="今日奖励"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_14dp"
+                        android:layout_marginRight="@dimen/height_14dp"
+                        android:layout_marginTop="@dimen/height_7dp"
+                        android:layout_marginBottom="@dimen/height_7dp"
+                        android:overScrollMode="never">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_14dp"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                app:cardCornerRadius="@dimen/height_10dp"
+                app:cardElevation="@dimen/height_5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_win_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:overScrollMode="never">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_win_result_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_error" />
+    </RelativeLayout>
+</RelativeLayout>

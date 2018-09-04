@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/height_7dp"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_game_icon"
+        android:layout_width="@dimen/height_50dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_centerHorizontal="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/ic_launcher"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="@dimen/height_10dp" />
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        android:layout_width="@dimen/height_50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_game_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black_5D"
+        android:textSize="@dimen/height_13dp" />
+
+</RelativeLayout>

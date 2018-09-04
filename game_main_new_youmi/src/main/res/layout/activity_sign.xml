@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_diamond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_sign_bg"
+    tools:context="com.leyou.game.activity.mine.SignActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_marginTop="@dimen/padding_top">
+
+            <ImageView
+                android:id="@+id/iv_sign_back"
+                android:layout_width="@dimen/height_48dp"
+                android:layout_height="@dimen/height_48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/height_14dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mine_sign_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/re_sign_circle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_circle_shape_selector">
+
+            <com.leyou.game.widget.CircleProgressView
+                android:id="@+id/circle_sign_progress_view"
+                android:layout_width="@dimen/height_140dp"
+                android:layout_height="@dimen/height_140dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/height_7dp"
+                app:roundColor="@color/white"
+                app:roundProgressColor="@color/blue_44"
+                app:roundWidth="@dimen/height_4dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sign_total_diamond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40dp"
+            android:gravity="center"
+            android:text="我的钻石  1000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_14dp"
+        android:layout_marginLeft="@dimen/height_14dp"
+        android:layout_marginRight="@dimen/height_14dp"
+        app:cardCornerRadius="@dimen/height_10dp"
+        app:cardElevation="@dimen/height_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/height_20dp"
+                    android:layout_height="@dimen/height_17dp"
+                    android:src="@mipmap/icon_diamond_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:text="@string/sign_explain"
+                    android:textColor="@color/black_5D"
+                    android:textSize="@dimen/text_size_20" />
+
+                <ImageView
+                    android:layout_width="@dimen/height_20dp"
+                    android:layout_height="@dimen/height_17dp"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:src="@mipmap/icon_diamond_blue" />
+            </LinearLayout>
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_15dp"
+                android:layout_marginLeft="@dimen/height_15dp"
+                android:layout_marginRight="@dimen/height_15dp"
+                android:layout_marginTop="@dimen/height_10dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

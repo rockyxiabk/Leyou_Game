@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_14dp"
+        android:layout_marginTop="@dimen/height_14dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/height_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定手机号"
+                    android:textColor="@color/blue_44"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_dd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:text="手机号"
+                    android:textColor="@color/green_05"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/ed_phoneNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/et_input_shape"
+                        android:gravity="left|center_vertical"
+                        android:hint="输入11位手机号"
+                        android:imeOptions="actionDone"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/green_05"
+                        android:textSize="@dimen/text_size_20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_dd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_verify_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:text="验证码"
+                    android:textColor="@color/green_05"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_60dp"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/ed_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/et_input_shape"
+                        android:gravity="left|center_vertical"
+                        android:hint="输入验证码"
+                        android:imeOptions="actionDone"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColor="@color/green_05"
+                        android:textSize="@dimen/text_size_20" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_send_sms_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/height_15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="发送验证码"
+                    android:textColor="@color/blue_44"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_dd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_item_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_item_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下一步"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_wolf_kill_prop_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/height_6dp"
+    android:paddingLeft="@dimen/height_5dp"
+    android:paddingRight="@dimen/height_5dp"
+    android:paddingTop="@dimen/height_6dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/height_105dp"
+        android:layout_height="@dimen/height_180dp"
+        android:background="@drawable/item_selector">
+
+        <ImageView
+            android:id="@+id/iv_wolf_prop_type_img"
+            android:layout_width="@dimen/height_105dp"
+            android:layout_height="@dimen/height_180dp" />
+
+        <TextView
+            android:id="@+id/tv_wolf_prop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_20dp"
+            android:text="守卫体验卡"
+            android:textColor="@color/black_12"
+            android:textSize="@dimen/text_size_10" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_diamond"
+        android:layout_width="@dimen/height_105dp"
+        android:layout_height="@dimen/height_25dp"
+        android:background="@mipmap/icon_prop_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/height_12dp"
+            android:layout_height="@dimen/height_8dp"
+            android:src="@mipmap/icon_diamond_ext" />
+
+        <TextView
+            android:id="@+id/tv_wolf_prop_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_4dp"
+            android:text="35000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+
+    </LinearLayout>
+
+</LinearLayout>

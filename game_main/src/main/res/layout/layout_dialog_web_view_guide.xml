@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <com.tamic.jswebview.view.ProgressBarWebView
+        android:id="@+id/webView"
+        style="@style/NumberProgressBar_custom_no_progress"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+
+    </com.tamic.jswebview.view.ProgressBarWebView>
+</RelativeLayout>

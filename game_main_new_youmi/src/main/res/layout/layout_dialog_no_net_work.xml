@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/height_14dp"
+    android:layout_marginRight="@dimen/height_14dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:background="@drawable/ll_bg_game"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_72dp"
+            android:gravity="center|left"
+            android:text="@string/setting_wlan_tips"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginBottom="@dimen/height_14dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/height_100dp"
+                android:layout_height="@dimen/height_35dp"
+                android:background="@drawable/btn_exit_bg_selector"
+                android:text="@string/cancel"
+                android:textColor="@color/black_5D"
+                android:textSize="@dimen/text_size_20" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_marginLeft="@dimen/height_15dp"
+                android:background="@drawable/btn_radius_selector"
+                android:text="@string/go_setting_wlan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/height_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/height_15dp"
+        android:src="@mipmap/icon_panda_roket" />
+
+</RelativeLayout>

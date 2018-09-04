@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/sale_diamond"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_sale_diamond_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_buy_diamond_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_sale_diamond_input"
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_25dp"
+                android:background="@drawable/dialog_input_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_input_hint_number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="6"
+                android:paddingLeft="@dimen/height_6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sale_total_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_50dp"
+            android:layout_marginTop="@dimen/height_4dp"
+            android:text="当前可用20个钻石"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_50dp"
+                android:text="要出售的钻石单价(大于等于0.001)"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_11" />
+
+            <EditText
+                android:id="@+id/et_sale_money_input"
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_2dp"
+                android:background="@drawable/dialog_input_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_input_hint_sale_money"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="5"
+                android:paddingLeft="@dimen/height_6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_45dp"
+            android:paddingRight="@dimen/height_45dp">
+            <TextView
+                android:id="@+id/tv_sale_market_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_f2"
+                android:textSize="@dimen/text_size_7"
+                android:text="@string/app_name"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dialog_buy_diamond_list"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_sale_diamond"
+            android:layout_width="@dimen/height_210dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/sure_sale_diamond"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/height_25dp"
+            android:layout_marginTop="@dimen/height_11dp"
+            android:text="@string/sale_diamond_tips"
+            android:textColor="@color/black_99"
+            android:textSize="@dimen/height_8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

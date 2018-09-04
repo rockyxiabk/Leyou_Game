@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_marginLeft="@dimen/height_7dp"
+        android:layout_marginRight="@dimen/height_7dp"
+        android:background="@color/white_ee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_22dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_game_comment_player_header"
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:background="@color/transparent"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="500"
+            fresco:failureImage="@mipmap/icon_not_login"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/icon_not_login"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:retryImage="@mipmap/icon_not_login"
+            fresco:retryImageScaleType="centerCrop"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_game_comment_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_toRightOf="@id/iv_game_comment_player_header"
+            android:text="@string/app_name"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_game_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_15dp"
+            android:text="2017/10/23"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_10" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_game_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_15dp"
+        android:layout_marginRight="@dimen/height_15dp"
+        android:layout_marginTop="@dimen/height_4dp"
+        android:text="@string/sign_explain_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_15dp"
+        android:layout_marginLeft="@dimen/height_15dp"
+        android:layout_marginRight="@dimen/height_15dp"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:gravity="right|bottom">
+
+        <TextView
+            android:id="@+id/tv_game_praise_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right|bottom"
+            android:text="456"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_11" />
+
+        <View
+            android:layout_width="@dimen/height_4dp"
+            android:layout_height="1dp" />
+
+        <ImageView
+            android:id="@+id/iv_praise_comment"
+            android:layout_width="@dimen/height_13dp"
+            android:layout_height="@dimen/height_13dp"
+            android:layout_marginLeft="@dimen/height_4dp"
+            android:src="@drawable/praise_comment_selector" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_12dp" />
+
+</LinearLayout>

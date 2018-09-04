@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/height_14dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:background="@drawable/ll_bg_game"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:text="@string/game_award_explain"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_20" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_marginRight="@dimen/height_15dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:overScrollMode="never">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_panda_rocket"
+        android:layout_width="@dimen/height_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/height_15dp"
+        android:src="@mipmap/icon_win_award_explain_grade" />
+
+    <ImageView
+        android:id="@+id/iv_webView_close"
+        android:layout_width="@dimen/height_34dp"
+        android:layout_height="@dimen/height_34dp"
+        android:layout_below="@id/ll_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_14dp"
+        android:src="@mipmap/icon_close" />
+</RelativeLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    tools:context="com.leyou.game.activity.mine.ModifyUserInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_modify_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_person_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_person_back"
+            android:text="@string/mine_person_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_modify_title"
+        android:background="@color/white_f5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/re_person_modify_header_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_63dp"
+            android:layout_marginTop="@dimen/height_6dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_selector"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_head_img"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_modify_header_img"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_20dp"
+                    android:background="@color/transparent"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/icon_not_login"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/icon_not_login"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImage="@mipmap/icon_not_login"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="@color/gray_dcdcdc"
+                    fresco:roundingBorderWidth="@dimen/height_1dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/height_7dp"
+                    android:layout_height="@dimen/height_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_next_level" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_person_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/height_6dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_selector"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_nick_name"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_modify_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_20dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black_99"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:layout_width="@dimen/height_7dp"
+                    android:layout_height="@dimen/height_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_next_level" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_person_modify_year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="1px"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_selector"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_year"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_modify_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_20dp"
+                    android:text="1993-9-17"
+                    android:textColor="@color/black_99"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:layout_width="@dimen/height_7dp"
+                    android:layout_height="@dimen/height_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_next_level" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_person_modify_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="1px"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_selector"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_sex"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_modify_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_20dp"
+                    android:text="男"
+                    android:textColor="@color/black_99"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:layout_width="@dimen/height_7dp"
+                    android:layout_height="@dimen/height_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_next_level" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_selector"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_phone_number"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_modify_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/height_20dp"
+                    android:text="18866668888"
+                    android:textColor="@color/black_99"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/height_48dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/height_12dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp">
+
+                <TextView
+                    android:id="@+id/tv_person_info_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_bg_treasure_selector"
+                    android:gravity="center"
+                    android:text="@string/person_info_save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_popup_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_half"
+        android:visibility="gone">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_game_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_4dp"
+    android:layout_marginLeft="@dimen/height_11dp"
+    android:layout_marginRight="@dimen/height_11dp"
+    android:layout_marginTop="@dimen/height_4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@drawable/selector_elevation"
+    app:cardCornerRadius="@dimen/height_5dp"
+    app:cardElevation="@dimen/height_3dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_128dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_game_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_128dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@mipmap/icon_default_big"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/icon_default_big"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:retryImage="@mipmap/icon_default_big"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundAsCircle="false"
+                fresco:roundBottomLeft="false"
+                fresco:roundBottomRight="false"
+                fresco:roundTopLeft="true"
+                fresco:roundTopRight="true"
+                fresco:roundedCornerRadius="@dimen/height_5dp" />
+
+            <TextView
+                android:id="@+id/tv_game_slogn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_30"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/height_15dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:text="@string/about_faction_des"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_5dp"
+            android:layout_marginLeft="@dimen/height_15dp"
+            android:layout_marginRight="@dimen/height_15dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/height_5dp">
+
+            <TextView
+                android:id="@+id/tv_game_des"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/sign_explain_content"
+                android:textColor="@color/black_5D" />
+
+            <Button
+                android:id="@+id/btn_start_game"
+                android:layout_width="@dimen/height_95dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:background="@drawable/btn_radius_selector"
+                android:text="@string/game_start_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

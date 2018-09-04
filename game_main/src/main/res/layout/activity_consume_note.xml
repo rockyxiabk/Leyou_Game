@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.ConsumeNoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_consume_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_consume_back"
+            android:text="@string/mine_consume"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_f5">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_consume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_consume_note_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_f5"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_consume_error"
+                android:layout_width="@dimen/height_140dp"
+                android:layout_height="@dimen/height_95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_150dp"
+                android:src="@mipmap/icon_error" />
+
+            <TextView
+                android:id="@+id/tv_consume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_consume_error"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_21dp"
+                android:text="@string/data_load_failed_try"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

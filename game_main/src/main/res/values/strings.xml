@@ -1,0 +1,319 @@
+<resources>
+    <!--应用名称-->
+    <string name="app_name">熊猫玩玩</string>
+
+    <!--agora appid appkey 设置-->
+    <string name="private_app_id">679fd651e26e4cf99f483ef679f1430a</string>
+    <string name="legal_channel_name_characters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+
+
+    <!--注册页面-->
+    <string name="text_induce_start">立即体验</string>
+    <string name="immediately_in">直接进入</string>
+    <string name="register_login">登录</string>
+
+    <!--首页tab-->
+    <string name="treasury">宝窟</string>
+    <string name="friend">好友</string>
+    <string name="winAward">赢大奖</string>
+    <string name="fight">游戏</string>
+    <string name="mine">我的</string>
+
+    <!--赢大奖页面-->
+    <string name="game_explain">游戏说明</string>
+
+    <string name="game_award_explain">奖励说明</string>
+    <string name="game_go_charts">查看排行榜</string>
+    <string name="game_rank_title">排行榜</string>
+    <string name="game_start_play">开始游戏</string>
+
+    <!--我的页面-->
+    <string name="user_un_login">用户未登陆</string>
+    <string name="mine_person_info">个人信息</string>
+    <string name="person_info_save">保存</string>
+    <string name="person_head_img">头像</string>
+    <string name="person_head_img_camera">相机拍照</string>
+    <string name="person_head_img_gallery">相册选图</string>
+    <string name="clip_image">头像选择</string>
+    <string name="person_nick_name">昵称</string>
+    <string name="person_modify_name">编辑昵称</string>
+    <string name="person_modify_name_hint">输入昵称</string>
+    <string name="person_year">出生日期</string>
+    <string name="person_sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="person_phone_number">手机号</string>
+
+    <!--充值-->
+    <string name="mine_chongzhi">充值</string>
+    <string name="buy_diamond">钻石充值</string>
+    <string name="sure_buy_diamond">确认充值</string>
+
+    <!--交易所-->
+    <string name="mine_exchange">交易所</string>
+    <string name="exchange_buy">收购</string>
+    <string name="exchange_sale">出售</string>
+    <string name="sale_diamond">钻石出售</string>
+    <string name="purchase_diamond">钻石收购</string>
+    <string name="trade_diamond">交易钻石</string>
+    <string name="sell_diamond_tips">提示：交易成功会扣除相应的钻石数量，出售钻石所得的钱会直接转入余额</string>
+    <string name="sure_sell_diamond">确认交易</string>
+    <string name="sure_purchase_diamond">确认收购</string>
+    <string name="purchase_diamond_tips">提示：钻石收购要预先支付收购所需金额，收购结束后，剩余金额会转入到账户余额内</string>
+    <string name="sure_sale_diamond">确认出售</string>
+    <string name="sale_diamond_tips">提示：钻石卖的越多，单价越高哦～</string>
+    <string name="exchange_my_buy">我要收购</string>
+    <string name="exchange_my_sale">我要出售</string>
+
+    <!--签到-->
+    <string name="mine_sign_diamond">领钻石</string>
+    <string name="sign">签到</string>
+    <string name="sign_explain">签到说明</string>
+    <string name="sign_explain_content">1.用户需要，登录后手动签到，每日00：00准时更新签到信息。\n2.第一天签到，每次可随机获得1~10钻奖励；\n3.连续签到三天，每次可随机获得10~20钻奖励;\n4.连续签到七天及以上，每次可随机获得20~50钻奖励。\n5.钻石主要终于游戏内消费，以及赢大奖版本购买参与次数及复活时使用。\n6.钻石可以直接在我的→交易所中，自由交易（严禁一切利用BUG进行的刷单行为，一经查实，永久封号处理）。
+    </string>
+
+    <!--交易记录-->
+    <string name="mine_trade_notes">交易记录</string>
+    <string name="trade_buy">买入钻石</string>
+    <string name="trade_sale">卖出钻石</string>
+
+    <!--消费记录-->
+    <string name="mine_consume">消费记录</string>
+
+    <!--消息-->
+    <string name="mine_message">消息</string>
+
+    <!--获奖列表-->
+    <string name="mine_win_result_award">获奖列表</string>
+    <string name="mine_win_result_award_detail">奖品详情</string>
+    <string name="award_mail">邮箱</string>
+    <string name="award_mail_hint">邮箱地址</string>
+    <string name="award_address">地址</string>
+    <string name="award_address_hint">收件人地址</string>
+    <string name="award_courier_company">承运来源</string>
+    <string name="award_express_no">运单编号</string>
+    <string name="mine_win_result">上期赢大奖成绩</string>
+    <string name="win_result_title">上期获奖名单</string>
+
+    <!--意见反馈-->
+    <string name="mine_feedback">意见反馈</string>
+    <string name="feedback_title">反馈主题</string>
+    <string name="feedback_content">请输入您要反馈的内容</string>
+    <string name="feedback_phone_qq">您的联系电话或者QQ号</string>
+    <string name="feedback_commit">提交反馈</string>
+
+    <!--开发者-->
+    <string name="mine_apply_developer">申请成为开发者</string>
+    <string name="mine_apply_developer_no">未申请</string>
+    <string name="mine_apply_developer_committed">已提交资料</string>
+    <string name="mine_apply_developer_checking">审核中</string>
+    <string name="mine_apply_developer_check_successes">已通过审核</string>
+    <string name="mine_apply_developer_check_failed">未通过</string>
+
+    <!--游戏上传-->
+    <string name="mine_upload_game">上传我的游戏</string>
+    <string name="upload_apply">上传申请</string>
+    <string name="upload_game_type">游戏类型:</string>
+    <string name="upload_game_name">游戏名称:</string>
+    <string name="upload_game_introduce">游戏简介:</string>
+    <string name="upload_game_image">游戏截图:</string>
+    <string name="upload_game_try_play_address">试玩地址:</string>
+    <string name="upload_game_apply_commit">提交申请</string>
+    <string-array name="upload_game_type">
+        <item>动作冒险</item>
+        <item>休闲益智</item>
+        <item>影音频</item>
+        <item>影音养成养成视频</item>
+        <item>动物养养成</item>
+        <item>影音视频</item>
+        <item>动物养成养成</item>
+        <item>影音养成养成养成视频</item>
+        <item>动物养成养成养养成</item>
+    </string-array>
+
+    <!--提现-->
+    <string name="mine_with_cash">提现</string>
+    <string name="with_cash_band_card">绑定银行卡</string>
+    <string name="with_cash_un_band_card">更换</string>
+    <string name="with_cash_apply">提现申请</string>
+    <string name="with_cash_name">姓名</string>
+    <string name="with_cash_money">金额</string>
+    <string name="with_cash_money_tips">提现金额</string>
+    <string name="with_cash_card_number">卡号</string>
+    <string name="with_cash_card_bank">开户行</string>
+    <string name="with_cash_name_hint">持卡人姓名</string>
+    <string name="with_cash_money_hint">提现金额</string>
+    <string name="with_cash_card_number_hint">请输入提现卡号</string>
+    <string name="with_cash_card_bank_hint">请输入银行卡开户行</string>
+    <string name="with_cash_commit">提交申请</string>
+
+    <!--关于-->
+    <string name="setting">设置</string>
+    <string name="mine_about">关于</string>
+    <string name="about_go_judge">去评分</string>
+    <string name="about_faction_des">功能介绍</string>
+    <string name="about_check_version">检查新版本</string>
+    <string name="about_check_version_hint">当前已是最新版本</string>
+    <string name="about_check_find_new_version">发现新版本</string>
+    <string name="about_share">推荐给好友</string>
+    <string name="about_clear_cache">清除缓存</string>
+    <string name="clear_cache">清除缓存中...</string>
+    <string name="about_app_company">© 2017-2017 igamestorm.com. All rights reserved</string>
+
+    <!--注销登陆-->
+    <string name="mine_exit">注销登录</string>
+    <string name="exit_title">注销</string>
+    <string name="exit_des">确认要退出吗？</string>
+    <string name="exit_cancel">我再看看</string>
+    <string name="exit_confirm">狠心离开</string>
+
+    <!--宝窟页面-->
+    <string name="treasure_activate">宝库激活</string>
+    <string name="treasure_consume_diamond">钻石消耗</string>
+    <string name="treasure_activate_des">新用户首次打开激活免费赠送20颗钻石，雇佣矿工挖矿获得更多钻石，钻石达到一定数量后可交易出售呦，快来试玩吧~</string>
+    <string name="treasure_mine_worker">我的矿工</string>
+    <string name="treasure_add_worker">添加矿工位</string>
+    <string name="treasure_choose_worker">矿工选择</string>
+    <string name="treasure_worker_employ">雇佣矿工</string>
+    <string name="treasure_worker_employ_failed">雇佣失败，请确认该矿工信息！</string>
+    <string name="treasure_worker_employ_success">雇佣成功，去我的矿工查看该矿工属性吧～</string>
+    <string name="treasure_dismissed_worker">解雇矿工</string>
+    <string name="treasure_dismissed_worker_confirm">确认解雇</string>
+    <string name="treasure_dismissed_explain">解雇说明</string>
+    <string name="treasure_dismissed_explain_content">每位初始玩家获得5个矿工位，最多开启25个矿工位，宿舍满员后可以选择解雇矿工来雇佣新的矿工。\n</string>
+    <string name="treasure_composed_worker">合成矿工</string>
+    <string name="treasure_composed_worker_confirm">确认合成</string>
+    <string name="treasure_composed_explain">合成说明</string>
+    <string-array name="worker_array">
+        <item>橙色矿工</item>
+        <item>红色矿工</item>
+        <item>金色矿工</item>
+        <item>紫色矿工</item>
+    </string-array>
+    <string name="treasure_upgrade_worker">升级矿工</string>
+    <string name="treasure_upgrade_worker_confirm">升级</string>
+    <string name="treasure_upgrade_explain">升级说明</string>
+    <string name="treasure_play_explain">玩法说明</string>
+    <string name="treasure_extract_time">开采剩余时间</string>
+    <string name="treasure_refresh_time">剩余刷新时间:</string>
+    <string name="treasure_protect_grade">防护等级:</string>
+    <string name="treasure_diamond_convert">兑换钻石</string>
+    <string name="treasure_grade">宝窟等级</string>
+    <string name="enter_treasure">进入宝窟</string>
+    <string name="refresh_treasure">刷新宝窟</string>
+    <string name="treasure_refresh">宝窟刷新</string>
+    <string name="treasure_delete_title">解除宝窟</string>
+    <string name="treasure_attack_treasure">放弃宝窟</string>
+    <string name="treasure_race_treasure">占领宝窟</string>
+    <string name="treasure_extract_treasure">开采宝窟</string>
+    <string name="treasure_send_worker">指定矿工</string>
+    <string name="treasure_abandon_treasure">放弃宝窟</string>
+    <string name="treasure_modify_worker">更换矿工</string>
+    <string name="treasure_delete_des">当前宝库已开采完毕，解除宝库后，可重新抢占其他宝库开采碎钻～</string>
+    <string name="treasure_refresh_des">确认要刷新当前开采的宝窟？本次刷新有机率出现1～3级的宝窟</string>
+    <string name="i_sure">我确认</string>
+    <string name="treasure_refresh_worker">刷新矿工</string>
+    <string name="treasure_worker_refresh">矿工刷新</string>
+    <string name="treasure_worker_refresh_des">  \n本次刷新需要消耗10颗钻石，有机率刷出高级矿工呦～</string>
+    <string name="treasure_employ_worker">可雇佣的矿工</string>
+
+    <!--道具商城-->
+    <string name="treasure_prop_shop">道具商城</string>
+    <string name="treasure_prop_mine">我的道具</string>
+    <string name="treasure_prop_buy">购买道具</string>
+    <string name="treasure_prop_diamond_buy">钻石购买</string>
+    <string name="treasure_prop_chips_buy">碎钻购买</string>
+
+
+    <!-- 订单支付页面-->
+    <string name="order_pay">支付订单</string>
+    <string name="order_pay_failed">订单支付失败</string>
+    <string name="order_pay_success">订单支付成功</string>
+    <string name="order_pay_generator_failed">订单生成失败</string>
+    <string name="order_pay_generator_order">正在生成订单...</string>
+    <string name="order_pay_check_environment">检查支付环境...</string>
+    <string name="order_pay_check_pay_result">正在查询支付结果...</string>
+    <string name="chongzhi_success">充值成功</string>
+    <string name="chongzhi_failed">充值失败</string>
+    <string name="diamonds_number_no_more">钻石数量不足！</string>
+
+    <!--游戏详情页面-->
+    <string name="game_detail">游戏详情</string>
+
+    <!--钻石兑换-->
+    <string name="diamond_convert">钻石兑换</string>
+
+    <!--好友-->
+    <string name="friend_message">消息</string>
+    <string name="friend_rank">好友排行</string>
+    <string name="friend_my_contacts">我的好友</string>
+    <string name="friend_contacts">通讯录</string>
+    <string name="friend_new_friend">新的朋友</string>
+    <string name="friend_conversation_read">标为已读</string>
+    <string name="friend_conversation_no_read">标为未读</string>
+    <string name="friend_conversation_top">置顶聊天</string>
+    <string name="friend_conversation_top_cancel">取消置顶</string>
+    <string name="friend_conversation_delete">删除该聊天</string>
+    <string name="friend_send_message">发消息</string>
+    <string name="friend_add_friend">添加好友</string>
+    <string name="friend_detail">详细资料</string>
+    <string name="friend_set_remark">设置备注</string>
+    <string name="friend_phone_number">电话号码</string>
+    <string name="friend_address">所在地区</string>
+    <string name="friend_start_crowd">发起群聊</string>
+    <string name="friend_create_crowd">创建群</string>
+    <string name="friend_crowd_nick_name">群聊名称</string>
+    <string name="friend_crowd_my_nick_name">我的群昵称</string>
+    <string name="friend_crowd_message_no_tips">消息免打扰</string>
+    <string name="friend_delete">删除好友</string>
+    <string name="friend_delete_crowd">退出群聊</string>
+    <string name="friend_remove_member">移除群成员</string>
+    <string name="friend_crowd_logout">删除并退出</string>
+
+    <!--狼人杀-->
+    <string name="wolf_kill_invite_friend">邀请好友</string>
+
+    <string name="no">否</string>
+    <string name="yes">是</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="confirm">确认</string>
+    <string name="search">搜索</string>
+    <string name="activate">激活</string>
+    <string name="activating">激活中...</string>
+    <string name="activate_failed">激活失败</string>
+    <string name="activate_success">激活成功</string>
+    <string name="net_error">网络错误</string>
+    <string name="data_loading">数据加载中...</string>
+    <string name="data_load_failed_try">数据加载失败，请稍后再试～</string>
+    <string name="data_load_list_null">还没有相关交易哦～</string>
+    <string name="data_load_list_no_prize">暂无排行</string>
+    <string name="data_load_failed">加载失败</string>
+    <string name="data_load_success">加载成功</string>
+    <string name="data_load_all">已加载全部数据～</string>
+    <string name="data_refresh_failed">刷新失败</string>
+    <string name="data_refresh_success">刷新成功</string>
+    <string name="verify_login_failed">验证登录失败</string>
+    <string name="verify_login_success">验证登录成功</string>
+    <string name="login_verify_failed">登录验证失败</string>
+    <string name="login_verify_success">登录验证成功</string>
+    <string name="save_failed">修改失败</string>
+    <string name="save_success">修改成功</string>
+    <string name="img_upload_failed">头像上传失败</string>
+    <string name="img_upload_success">头像上传成功</string>
+    <string name="sign_failed">签到失败</string>
+    <string name="sign_success">签到成功</string>
+    <string name="check_upgrading">检查更新中..</string>
+    <string name="signed">今天已经签过到了，明天再来吧～</string>
+    <string name="no_more_data">没有更多出售信息了</string>
+    <string name="no_more_message">没有更多消息了</string>
+    <string name="edit_input_hint_number">请输入500的倍数</string>
+    <string name="edit_input_hint_sale_money">请输入要卖出的钻石单价</string>
+    <string name="conversation_list_null">您还没有聊天信息哦～</string>
+    <string name="no_read_message">...</string>
+    <string name="save_picture_failed">图片保存失败</string>
+    <string name="save_picture_success">图片保存成功</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

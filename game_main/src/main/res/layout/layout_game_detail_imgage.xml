@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_game_detail_image"
+        android:layout_width="@dimen/height_140dp"
+        android:layout_height="@dimen/height_260dp"
+        android:layout_marginRight="@dimen/height_10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/induce_one" />
+
+</RelativeLayout>

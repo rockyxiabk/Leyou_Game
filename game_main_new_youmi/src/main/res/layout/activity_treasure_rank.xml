@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.treasure.TreasureRankActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_dismiss_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/treasure_diamond_rank"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/height_14dp"
+            app:cardCornerRadius="@dimen/height_7dp"
+            app:cardElevation="@dimen/height_5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/re_top_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_165dp"
+                    android:layout_marginLeft="@dimen/height_14dp"
+                    android:layout_marginRight="@dimen/height_14dp"
+                    android:layout_marginTop="@dimen/height_14dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_72dp"
+                        android:layout_marginRight="@dimen/height_88dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_60dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/treasure_rank_red_bg"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="@dimen/height_10dp"
+                                android:layout_marginLeft="@dimen/height_14dp"
+                                android:layout_marginRight="@dimen/height_14dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="抢碎钻:"
+                                        android:textColor="@color/gold"
+                                        android:textSize="@dimen/text_size_13" />
+
+                                    <TextView
+                                        android:id="@+id/tv_user1_qiang_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="190390"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_size_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="挖碎钻:"
+                                        android:textColor="#19F1C1"
+                                        android:textSize="@dimen/text_size_13" />
+
+                                    <TextView
+                                        android:id="@+id/tv_user1_wa_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="00000"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_size_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/iv_user1_header"
+                            android:layout_width="@dimen/height_40dp"
+                            android:layout_height="@dimen/height_40dp"
+                            android:background="@color/transparent"
+                            app:actualImageScaleType="focusCrop"
+                            app:fadeDuration="500"
+                            app:failureImage="@mipmap/ic_launcher"
+                            app:failureImageScaleType="centerCrop"
+                            app:placeholderImage="@mipmap/ic_launcher"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:retryImage="@mipmap/ic_launcher"
+                            app:retryImageScaleType="centerCrop"
+                            app:roundedCornerRadius="@dimen/height_5dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user1_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_5dp"
+                            android:layout_marginTop="@dimen/height_20dp"
+                            android:layout_toRightOf="@id/iv_user1_header"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_72dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/height_88dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_60dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/treasure_rank_blue_bg"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="@dimen/height_10dp"
+                                android:layout_marginLeft="@dimen/height_14dp"
+                                android:layout_marginRight="@dimen/height_14dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="抢碎钻:"
+                                        android:textColor="@color/gold"
+                                        android:textSize="@dimen/text_size_13" />
+
+                                    <TextView
+                                        android:id="@+id/tv_user2_qiang_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="190390"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_size_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="挖碎钻:"
+                                        android:textColor="#19F1C1"
+                                        android:textSize="@dimen/text_size_13" />
+
+                                    <TextView
+                                        android:id="@+id/tv_user2_wa_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="00000"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_size_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/iv_user2_header"
+                            android:layout_width="@dimen/height_40dp"
+                            android:layout_height="@dimen/height_40dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparent"
+                            app:actualImageScaleType="focusCrop"
+                            app:fadeDuration="500"
+                            app:failureImage="@mipmap/ic_launcher"
+                            app:failureImageScaleType="centerCrop"
+                            app:placeholderImage="@mipmap/ic_launcher"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:retryImage="@mipmap/ic_launcher"
+                            app:retryImageScaleType="centerCrop"
+                            app:roundedCornerRadius="@dimen/height_5dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user2_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/height_5dp"
+                            android:layout_marginTop="@dimen/height_20dp"
+                            android:layout_toLeftOf="@id/iv_user2_header"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+                    </RelativeLayout>
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/iv_vs_gif"
+                        android:layout_width="@dimen/height_180dp"
+                        android:layout_height="@dimen/height_75dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/height_55dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_treasure_rank_vs" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_35dp"
+                    android:layout_margin="@dimen/height_14dp"
+                    android:background="@drawable/win_rank_item_radius_bg_selector"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="用户名"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="@dimen/height_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/height_5dp"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:background="@color/white_1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="抢占收入"
+                        android:textColor="@color/red_f2"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="@dimen/height_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/height_5dp"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:background="@color/white_1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="采矿收入"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/white_1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

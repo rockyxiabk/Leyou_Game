@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_355dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_300dp"
+        android:layout_marginTop="@dimen/height_23dp"
+        android:background="@mipmap/icon_treasure_dialog_bg"
+        android:paddingLeft="@dimen/height_15dp"
+        android:paddingRight="@dimen/height_15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/height_5dp"
+            android:layout_marginTop="@dimen/height_23dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.leyou.game.widget.treasury.TreasureTextView
+                        android:id="@+id/tv_enemy_worker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/icon_treasure_shield"
+                        android:drawablePadding="@dimen/height_4dp"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textColor="@color/palm_a4"
+                        android:textSize="@dimen/text_size_12"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_134dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/re_protect_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_57dp"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_worker_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_57dp"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_worker_enemy"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_57dp"
+                            android:visibility="gone">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/height_2dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_treasure_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_default_big" />
+
+                        <ImageView
+                            android:id="@+id/iv_treasure_no_attach_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_default_big"
+                            android:visibility="invisible" />
+
+                        <RelativeLayout
+                            android:id="@+id/re_treasure_container_chips"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_2dp">
+
+                    <com.leyou.game.widget.treasury.TreasureTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择我的矿工"
+                        android:textColor="@color/palm_a4"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <com.leyou.game.widget.treasury.TreasureTextView
+                        android:id="@+id/tv_attack_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="矿工攻击力：0"
+                        android:textColor="@color/palm_a4"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_worker_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_57dp"
+                    android:layout_marginTop="@dimen/height_2dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/height_5dp">
+
+                    <com.leyou.game.widget.treasury.TreasureTextView
+                        android:id="@+id/btn_harvest_treasure"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_34dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@mipmap/icon_treasure_dialog_btn_bg"
+                        android:gravity="center"
+                        android:shadowColor="@color/purple_45"
+                        android:shadowDx="3"
+                        android:shadowDy="5"
+                        android:shadowRadius="2"
+                        android:text="@string/treasure_race_treasure"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <com.leyou.game.widget.treasury.TreasureTextView
+                        android:id="@+id/btn_refresh_treasure"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_34dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/height_7dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/icon_treasure_dialog_btn_bg"
+                        android:gravity="center"
+                        android:shadowColor="@color/purple_45"
+                        android:shadowDx="3"
+                        android:shadowDy="5"
+                        android:shadowRadius="2"
+                        android:text="@string/refresh_treasure"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <com.leyou.game.widget.treasury.TreasureTextView
+        android:id="@+id/tv_treasure_grade"
+        android:layout_width="@dimen/height_210dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/icon_treasure_dialog_bg_title"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/height_7dp"
+        android:shadowColor="@color/blue_1c"
+        android:shadowDx="3"
+        android:shadowDy="5"
+        android:shadowRadius="2"
+        android:text="一级宝窟"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_19" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/height_50dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/height_5dp"
+        android:paddingBottom="@dimen/height_5dp"
+        android:paddingLeft="@dimen/height_10dp"
+        android:paddingTop="@dimen/height_5dp"
+        android:src="@mipmap/icon_treasure_dialog_close" />
+
+</RelativeLayout>

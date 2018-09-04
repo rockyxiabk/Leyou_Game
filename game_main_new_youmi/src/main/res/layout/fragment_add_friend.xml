@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.fragment.friend.AddFriendFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginBottom="@dimen/height_7dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@drawable/ll_bg_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15dp">
+
+            <ImageView
+                android:layout_width="@dimen/height_14dp"
+                android:layout_height="@dimen/height_14dp"
+                android:src="@mipmap/icon_search" />
+
+            <TextView
+                android:id="@+id/et_input_key_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_5dp"
+                android:hint="@string/friend_search_friend_hint"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_10dp"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="推荐好友"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_1" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

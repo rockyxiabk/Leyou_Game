@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_sign_list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/item_selector"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/height_2dp"
+    android:paddingLeft="@dimen/height_12dp"
+    android:paddingRight="@dimen/height_12dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_sign_list_game_img"
+        android:layout_width="@dimen/height_95dp"
+        android:layout_height="@dimen/height_95dp"
+        android:layout_marginTop="@dimen/height_12dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="500"
+        fresco:failureImage="@mipmap/icon_default"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/icon_default"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/icon_default"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="@dimen/height_8dp" />
+
+    <TextView
+        android:id="@+id/tv_sign_list_game_name"
+        android:layout_width="@dimen/height_80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_11dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black_a33"
+        android:textSize="@dimen/text_size_13" />
+
+</LinearLayout>

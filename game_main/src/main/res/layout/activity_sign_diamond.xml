@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_diamond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.SignDiamondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_mine_sign_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_marginTop="@dimen/padding_top">
+
+            <ImageView
+                android:id="@+id/iv_sign_back"
+                android:layout_width="@dimen/height_48dp"
+                android:layout_height="@dimen/height_48dp"
+                android:padding="@dimen/height_15dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_sign_back"
+                android:text="@string/mine_sign_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/text_custom_bg"
+                android:gravity="center"
+                android:padding="@dimen/height_10dp"
+                android:text="签到说明"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/height_12dp"
+            android:paddingRight="@dimen/height_12dp"
+            android:paddingTop="@dimen/height_35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="我的钻石："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_sign_diamond_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text=" 颗"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_marginTop="@dimen/height_25dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/line_sign_shape" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_mine_sign_award" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day1_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day1_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="@dimen/height_12dp"
+                            android:layout_height="@dimen/height_12dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/main_un_sign_shape"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day2_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day2_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_award" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day3_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day3_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="@dimen/height_12dp"
+                            android:layout_height="@dimen/height_12dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/main_un_sign_shape"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day4_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day4_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="@dimen/height_12dp"
+                            android:layout_height="@dimen/height_12dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/main_un_sign_shape"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day5_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day5_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="@dimen/height_12dp"
+                            android:layout_height="@dimen/height_12dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/main_un_sign_shape"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9" />
+
+                        <TextView
+                            android:id="@+id/tv_signed_day6_state"
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_mine_signed_bg"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_9"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_day6_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="@dimen/height_15dp"
+                            android:layout_height="@dimen/height_15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_mine_sign_award"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/iv_day7_signed"
+                            android:layout_width="@dimen/height_22dp"
+                            android:layout_height="@dimen/height_22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_mine_sign_success"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/height_35dp"
+                android:layout_marginTop="@dimen/height_35dp">
+
+                <Button
+                    android:id="@+id/btn_sign"
+                    android:layout_width="@dimen/height_130dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/icon_mine_sign_un_button"
+                    android:text="立即签到"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_12dp"
+        android:paddingRight="@dimen/height_12dp"
+        android:paddingTop="@dimen/height_35dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_explain"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:background="@color/white_e9" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_10dp"
+                    android:text="@string/sign_explain_content"
+                    android:textColor="@color/black_a46"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

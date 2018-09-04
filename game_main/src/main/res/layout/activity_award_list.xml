@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.AwardListActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_award_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_award_back"
+            android:text="@string/mine_win_result_award"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white_f5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_user_award"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_exchange_award_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white_f5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_null"
+            android:layout_width="@dimen/height_180dp"
+            android:layout_height="@dimen/height_120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_150dp"
+            android:src="@mipmap/icon_trade_list_null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_layout_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:text="@string/data_load_list_null"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

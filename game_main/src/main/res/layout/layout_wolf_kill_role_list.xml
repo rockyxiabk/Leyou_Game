@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/height_6dp"
+    android:layout_marginLeft="@dimen/height_12dp"
+    android:layout_marginRight="@dimen/height_12dp"
+    android:layout_marginTop="@dimen/height_6dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_wolf_kill_role_img"
+        android:layout_width="@dimen/height_35dp"
+        android:layout_height="@dimen/height_35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/icon_not_login"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="1000"
+        fresco:failureImage="@mipmap/icon_not_login"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/icon_not_login"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:retryImage="@mipmap/icon_not_login"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="@dimen/height_6dp" />
+
+    <TextView
+        android:id="@+id/tv_wolf_kill_role_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_wolf_kill_role_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_6dp"
+        android:text="100%"
+        android:textColor="@color/black_15"
+        android:textSize="@dimen/text_size_12" />
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.wolfkill.WolfKillActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_wolfKill_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_wolfKill_back"
+            android:text="狼人杀"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_fight_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_88dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_fight_head"
+                        android:layout_width="@dimen/height_52dp"
+                        android:layout_height="@dimen/height_52dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent"
+                        fresco:actualImageScaleType="focusCrop"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/icon_not_login"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/icon_not_login"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImage="@mipmap/icon_not_login"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_10dp"
+                        android:layout_toRightOf="@+id/iv_fight_head"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_wolfKill_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_fight_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_7dp"
+                            android:text="总局数：  3      胜率：  68.8%"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_12" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/height_7dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_next_level" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_f5" />
+
+            <ImageView
+                android:id="@+id/iv_fight_six"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_125dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_fight_six" />
+
+            <ImageView
+                android:id="@+id/iv_fight_nine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_125dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_fight_nine" />
+
+            <ImageView
+                android:id="@+id/iv_fight_twelve"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_125dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_fight_twelve" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_54dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:paddingBottom="@dimen/height_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_fight_create_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_fight_create_home" />
+
+                <ImageView
+                    android:id="@+id/iv_fight_find_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_fight_find_home" />
+
+                <ImageView
+                    android:id="@+id/iv_fight_prop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_fight_prop" />
+
+                <ImageView
+                    android:id="@+id/iv_fight_game_rule"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_fight_game_rule" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

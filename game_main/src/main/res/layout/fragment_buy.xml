@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.fragment.mine.TradeNoteFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_e9" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_exchange_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_1dp"
+        android:background="@color/white_f5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_exchange_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/height_6dp"
+            android:paddingRight="@dimen/height_6dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_exchange_buy_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_error"
+            android:layout_width="@dimen/height_140dp"
+            android:layout_height="@dimen/height_95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_150dp"
+            android:src="@mipmap/icon_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_layout_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:text="@string/data_load_failed_try"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_exchange_buy_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_null"
+            android:layout_width="@dimen/height_180dp"
+            android:layout_height="@dimen/height_120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_150dp"
+            android:src="@mipmap/icon_trade_list_null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_layout_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_21dp"
+            android:text="@string/data_load_list_null"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/guide_view1"
+            android:layout_width="@dimen/height_100dp"
+            android:layout_height="@dimen/height_80dp"
+            android:layout_marginTop="@dimen/height_60dp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/guide_view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80dp"
+            android:layout_marginTop="@dimen/height_60dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

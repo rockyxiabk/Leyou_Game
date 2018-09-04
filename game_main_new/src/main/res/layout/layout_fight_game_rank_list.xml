@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/re_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_75dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_selector"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_game_logo"
+            android:layout_width="@dimen/height_57dp"
+            android:layout_height="@dimen/height_57dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_12dp"
+            android:background="@color/transparent"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="500"
+            fresco:failureImage="@mipmap/ic_launcher"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:retryImage="@mipmap/ic_launcher"
+            fresco:retryImageScaleType="centerCrop"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="@dimen/height_10dp" />
+
+        <Button
+            android:id="@+id/btn_play_game"
+            android:layout_width="@dimen/height_75dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height_12dp"
+            android:background="@drawable/btn_radius_selector"
+            android:text="进入游戏"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_12dp"
+            android:layout_marginRight="@dimen/height_12dp"
+            android:layout_toLeftOf="@id/btn_play_game"
+            android:layout_toRightOf="@id/iv_game_logo"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游戏玩家"
+                    android:textColor="@color/black_15"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/iv_game_new"
+                    android:layout_width="@dimen/height_25dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_marginLeft="@dimen/height_3dp"
+                    android:src="@mipmap/icon_fight_game_new" />
+
+                <ImageView
+                    android:id="@+id/iv_game_hot"
+                    android:layout_width="@dimen/height_25dp"
+                    android:layout_height="@dimen/height_15dp"
+                    android:layout_marginLeft="@dimen/height_3dp"
+                    android:src="@mipmap/icon_fight_game_hot" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_game_type_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="休闲 | 459.7万人在玩"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_game_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/treasure_dismissed_explain_content"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_e9" />
+    </RelativeLayout>
+</RelativeLayout>

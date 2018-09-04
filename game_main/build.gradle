@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.leyou.game"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1322
+        versionName "1.3.22"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-va", "x86"
+        }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "zoKD0nT1ZQ6XdABk6zH8N",
+                GETUI_APP_KEY   : "mtdAO4QbYHAdq5dIJN77E2",
+                GETUI_APP_SECRET: "NocunKiTh26kShWGndBHE6"
+        ]
+    }
+
+    signingConfigs {
+        relealse {
+            storeFile file("game.jks")
+            storePassword "170315"
+            keyAlias "game_main"
+            keyPassword "170315"
+        }
+        debug {
+            storeFile file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            signingConfig signingConfigs.relealse
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            signingConfig signingConfigs.relealse
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+//    sourceSets{
+//        main{
+//            jniLibs.srcDirs=['libs']
+//        }
+//    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //系统兼容包
+
+    //greenrobot
+
+    //butterKnife
+
+    //okhttp3
+
+    //freco
+
+    //gson
+
+    //retrofit
+
+    //photo
+
+    //js_webView
+
+    //YOYO动画加载库
+
+    //短信验证
+    compile project(':SMSSDK')
+    compile project(':AgoraLib')
+    compile project(':IMKit')
+    compile project(':PhotoPickerLib')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:support-v13:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.facebook.fresco:fresco:1.3.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'io.reactivex:rxjava:1.2.7'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.tamic:browse:1.0.0'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.0@aar'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.1.6'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.yanzhenjie:permission:1.0.8'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile files('libs/fastjson-1.2.5.jar')
+}
+

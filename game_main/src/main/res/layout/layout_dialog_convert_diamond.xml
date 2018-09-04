@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/exit_title"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <EditText
+            android:id="@+id/et_chip_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:background="@drawable/dialog_input_shape"
+            android:gravity="center_vertical"
+            android:hint="输入要兑换的钻石数量"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="9"
+            android:paddingLeft="@dimen/height_10dp"
+            android:textColor="@color/black_a46"
+            android:textColorHint="@color/black_bb"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/tv_convert_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_12dp"
+            android:gravity="center|left"
+            android:text="当碎钻兑换比例为1：10000"
+            android:textColor="@color/black_bb"
+            android:textSize="@dimen/text_size_9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/height_27dp"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_23dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/height_65dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_exit_bg_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/height_7dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+</LinearLayout>

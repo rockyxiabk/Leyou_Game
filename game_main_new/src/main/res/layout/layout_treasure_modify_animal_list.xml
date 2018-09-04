@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_60dp"
+    android:layout_height="@dimen/height_57dp"
+    android:layout_marginRight="@dimen/height_6dp"
+    android:background="@drawable/treasure_bg_worker_blue_shape">
+
+    <ImageView
+        android:id="@+id/iv_treasure_animal_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/height_2dp"
+        android:src="@mipmap/icon_default" />
+
+</RelativeLayout>

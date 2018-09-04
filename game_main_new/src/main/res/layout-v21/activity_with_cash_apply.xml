@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.WithCashApplyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_cash_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/with_cash_apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_cash_note"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_with_cash_note" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_7dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_14dp"
+            fresco:cardBackgroundColor="@color/blue_00"
+            fresco:cardCornerRadius="@dimen/height_10dp"
+            fresco:cardElevation="@dimen/height_1dp"
+            fresco:cardPreventCornerOverlap="true"
+            fresco:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:id="@+id/ll_card_band"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_180dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45dp"
+                    android:layout_marginTop="@dimen/height_26dp"
+                    android:background="@color/blue_1b">
+
+                    <TextView
+                        android:id="@+id/tv_card_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_40dp"
+                        android:ellipsize="end"
+                        android:maxLength="6"
+                        android:text="建设银行"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_30"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_un_bind_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/height_14dp"
+                        android:background="@drawable/btn_bg_red_selector"
+                        android:paddingBottom="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/height_15dp"
+                        android:paddingRight="@dimen/height_15dp"
+                        android:paddingTop="@dimen/height_5dp"
+                        android:text="@string/with_cash_un_band_card"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_16" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_25dp"
+                    android:layout_marginLeft="@dimen/height_40dp"
+                    android:layout_marginRight="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/height_26dp"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/height_25dp"
+                        android:text="378103947*****9876"
+                        android:textColor="@color/black_5D"
+                        android:textSize="@dimen/text_size_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_5dp"
+                    android:layout_marginLeft="@dimen/height_40dp"
+                    android:layout_marginRight="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/height_26dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_5dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue_0d" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_5dp"
+                        android:layout_marginLeft="@dimen/height_8dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue_0d" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_5dp"
+                        android:layout_marginLeft="@dimen/height_8dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue_0d" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_5dp"
+                        android:layout_marginLeft="@dimen/height_8dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue_0d" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_current_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_14dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_14dp"
+            android:gravity="right"
+            android:text="余额:00.00"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_14" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_marginBottom="@dimen/height_14dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            fresco:cardCornerRadius="@dimen/height_10dp"
+            fresco:cardElevation="@dimen/height_5dp"
+            fresco:cardPreventCornerOverlap="false"
+            fresco:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/height_10dp"
+                android:layout_marginLeft="@dimen/height_15dp"
+                android:layout_marginRight="@dimen/height_15dp"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¥"
+                    android:textColor="@color/black_a46"
+                    android:textSize="@dimen/text_size_30" />
+
+                <EditText
+                    android:id="@+id/et_with_cash_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@drawable/et_register_bg"
+                    android:hint="@string/with_cash_money_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="19"
+                    android:singleLine="true"
+                    android:textColor="@color/black_a46"
+                    android:textColorHint="@color/black_bb"
+                    android:textSize="@dimen/text_size_30" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_with_cash_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_14dp"
+            android:background="@drawable/btn_radius_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

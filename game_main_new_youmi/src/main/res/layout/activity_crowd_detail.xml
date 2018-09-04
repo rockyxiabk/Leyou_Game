@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.FriendDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_150dp"
+        android:background="@mipmap/pic_my_header_bg" />
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_crowd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="7"
+            android:text="@string/friend_crowd_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_crowd_edit"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_150dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_crowd_header"
+                    android:layout_width="@dimen/height_100dp"
+                    android:layout_height="@dimen/height_100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="500"
+                    fresco:failureImage="@mipmap/ic_launcher"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/ic_launcher"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:retryImage="@mipmap/ic_launcher"
+                    fresco:retryImageScaleType="centerCrop"
+                    fresco:roundedCornerRadius="@dimen/height_5dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_crowd_id_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_15" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_14dp"
+                app:cardCornerRadius="@dimen/height_5dp"
+                app:cardElevation="@dimen/height_10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/height_14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_14dp"
+                        android:text="群简介:"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_crowd_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_14dp"
+                        android:layout_marginRight="@dimen/height_14dp"
+                        android:gravity="left"
+                        android:hint="一句话介绍群聊（30个字）"
+                        android:maxLines="3"
+                        android:textColor="@color/blue_44"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_14dp"
+                app:cardCornerRadius="@dimen/height_5dp"
+                app:cardElevation="@dimen/height_10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_crowd_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:layout_marginRight="@dimen/height_14dp"
+                android:layout_marginTop="@dimen/height_14dp"
+                app:cardCornerRadius="@dimen/height_5dp"
+                app:cardElevation="@dimen/height_10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/re_set_my_nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/height_12dp"
+                        android:paddingRight="@dimen/height_12dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/friend_crowd_my_nick_name"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <TextView
+                            android:id="@+id/tv_crowd_my_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black_99"
+                            android:textSize="@dimen/text_size_14" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:background="@drawable/item_selector"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/height_12dp"
+                        android:paddingRight="@dimen/height_12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/friend_crowd_message_no_tips"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <ToggleButton
+                            android:id="@+id/toggle_message_tips"
+                            android:layout_width="@dimen/height_44dp"
+                            android:layout_height="@dimen/height_23dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/icon_toggle_off"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_1dp"
+                        android:background="@color/white_1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:paddingLeft="@dimen/height_12dp"
+                        android:paddingRight="@dimen/height_12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/friend_conversation_top"
+                            android:textColor="@color/black_15"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <ToggleButton
+                            android:id="@+id/toggle_conversation_top"
+                            android:layout_width="@dimen/height_44dp"
+                            android:layout_height="@dimen/height_23dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/icon_toggle_off"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_10dp"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp"
+                android:paddingTop="@dimen/height_10dp">
+
+                <Button
+                    android:id="@+id/btn_logout_crowd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_42dp"
+                    android:background="@drawable/btn_bg_red_selector"
+                    android:text="@string/friend_crowd_logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

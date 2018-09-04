@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.LogInWebActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_about_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_apply_developer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_url"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/height_48dp"
+            android:layout_marginRight="@dimen/height_48dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_url" />
+
+        <ImageView
+            android:id="@+id/iv_computer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_35dp"
+            android:src="@mipmap/icon_computer" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_55dp"
+            android:layout_marginBottom="@dimen/height_40dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_40dp"
+            android:background="@drawable/btn_radius_selector"
+            android:elevation="0dp"
+            android:text="已打开网址,点击扫描登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+</LinearLayout>

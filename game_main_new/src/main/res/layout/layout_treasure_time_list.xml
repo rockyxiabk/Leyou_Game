@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.leyou.game.widget.CountDownTimeTextView
+        android:id="@+id/tv_treasure_time"
+        android:layout_width="@dimen/height_50dp"
+        android:layout_height="@dimen/height_20dp"
+        android:layout_marginBottom="@dimen/height_4dp"
+        android:background="@drawable/treasure_time_selector"
+        android:gravity="center"
+        android:text="空"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_10" />
+
+</LinearLayout>

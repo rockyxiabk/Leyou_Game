@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_62dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/transparent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_marginTop="@dimen/height_11dp"
+        android:background="@color/split_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_12dp"
+        android:background="@color/white">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/main_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_treasury"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/bar_treasury_selector"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/height_6dp"
+                    android:text="@string/treasury"
+                    android:textColor="@drawable/bar_text_selector"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/bar_friend_selector"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/height_6dp"
+                    android:text="@string/friend"
+                    android:textColor="@drawable/bar_text_selector"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.leyou.game.widget.DragPointView
+                    android:id="@+id/tv_friend_tips_number"
+                    android:layout_width="@dimen/height_17dp"
+                    android:layout_height="@dimen/height_17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/height_15dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/rb_Award"
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/bar_win_selector"
+                android:gravity="center"
+                android:text="@string/winAward"
+                android:textColor="@drawable/bar_text_selector"
+                android:textSize="@dimen/text_size_9" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_fight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:drawableTop="@drawable/bar_fight_selector"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/height_6dp"
+                    android:text="@string/fight"
+                    android:textColor="@drawable/bar_text_selector"
+                    android:textSize="@dimen/text_size_9" />
+
+                <com.leyou.game.widget.DragPointView
+                    android:id="@+id/tv_fight_tips_number"
+                    android:layout_width="@dimen/height_17dp"
+                    android:layout_height="@dimen/height_17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/height_17dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_7dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50dp"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:drawableTop="@drawable/bar_mine_selector"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/height_6dp"
+                    android:text="@string/mine"
+                    android:textColor="@drawable/bar_text_selector"
+                    android:textSize="@dimen/text_size_9" />
+            </RelativeLayout>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

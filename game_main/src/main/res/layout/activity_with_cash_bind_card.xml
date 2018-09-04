@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.WithCashBindCardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_cash_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_cash_back"
+            android:text="@string/with_cash_band_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42dp"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/height_12dp"
+            android:paddingRight="@dimen/height_12dp">
+
+            <TextView
+                android:layout_width="@dimen/height_58dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/with_cash_name"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <EditText
+                android:id="@+id/et_with_cash_apply_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_60dp"
+                android:background="@drawable/et_input_shape"
+                android:hint="@string/with_cash_name_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/black_a46"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42dp"
+            android:layout_marginTop="@dimen/height_1dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/height_12dp"
+            android:paddingRight="@dimen/height_12dp">
+
+            <TextView
+                android:layout_width="@dimen/height_58dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/with_cash_card_number"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <EditText
+                android:id="@+id/et_with_cash_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_60dp"
+                android:background="@drawable/et_input_shape"
+                android:hint="@string/with_cash_card_number_hint"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="19"
+                android:singleLine="true"
+                android:textColor="@color/black_a46"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42dp"
+            android:layout_marginTop="@dimen/height_1dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/height_12dp"
+            android:paddingRight="@dimen/height_12dp">
+
+            <TextView
+                android:layout_width="@dimen/height_58dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/with_cash_card_bank"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <EditText
+                android:id="@+id/et_with_cash_card_bank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_60dp"
+                android:background="@drawable/et_input_shape"
+                android:hint="@string/with_cash_card_bank_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_a46"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_with_cash_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/height_12dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_treasure_selector"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

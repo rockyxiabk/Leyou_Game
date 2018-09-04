@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_66dp"
+        android:background="@drawable/dialog_top_radius_bg">
+
+        <TextView
+            android:id="@+id/tv_attack_title_treasure_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一级宝窟"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_attack_title_treasure_attribute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/treasure_choose_worker"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+        <ImageView
+            android:id="@+id/iv_worker_attack_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_201dp"
+        android:background="@color/white"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/height_5dp"
+            android:paddingRight="@dimen/height_5dp">
+
+            <TextView
+                android:id="@+id/tv_choose_treasure_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_17dp"
+                android:text="当前宝窟矿工"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_worker_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_95dp"
+                android:layout_marginTop="@dimen/height_8dp"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_17dp"
+                android:text="选择我的矿工"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_worker_mine_can_use"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_95dp"
+                android:layout_marginTop="@dimen/height_8dp"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/height_5dp"
+        android:paddingRight="@dimen/height_5dp"
+        android:paddingTop="@dimen/height_5dp">
+
+        <Button
+            android:id="@+id/btn_abandon_worker"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_exit_bg_selector"
+            android:text="@string/treasure_abandon_treasure"
+            android:textColor="@color/black_a46"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_modify_worker"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:layout_weight="3"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/treasure_modify_worker"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_18dp"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyou.game.activity.treasure.TreasureActivity">
+
+    <ImageView
+        android:id="@+id/iv_treasure_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_treasury_bg_one" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_treasure_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_treasure_no_attach_animal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/re_treasure_container_chips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/height_60dp"
+        android:layout_marginRight="@dimen/height_100dp"
+        android:layout_marginTop="@dimen/height_80dp">
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/height_12dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_renew_worker"
+        android:layout_width="@dimen/height_80dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_marginLeft="@dimen/height_25dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:layout_toRightOf="@id/recycler_worker"
+        android:background="@drawable/btn_radius_selector"
+        android:gravity="center"
+        android:text="更换矿工"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="@dimen/height_75dp"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@drawable/text_radius_left_selector"
+        android:gravity="center"
+        android:text="  返回"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_13" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_treasure"
+        android:layout_width="@dimen/height_65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_find_new_treasure"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/text_radius_left_selector"
+            android:text="寻找新的宝窟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+
+        <Button
+            android:id="@+id/btn_abandon_treasure"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:background="@drawable/text_radius_left_selector"
+            android:text="放弃当前宝窟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_find_treasure_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

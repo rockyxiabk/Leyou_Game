@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/height_14dp"
+    android:layout_marginRight="@dimen/height_14dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:background="@drawable/ll_bg_game"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_72dp"
+            android:gravity="center"
+            android:text="@string/text_induce_register"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_marginBottom="@dimen/height_14dp"
+            android:layout_marginLeft="@dimen/height_14dp"
+            android:layout_marginRight="@dimen/height_14dp"
+            android:layout_marginTop="@dimen/height_40dp"
+            android:background="@drawable/btn_radius_selector"
+            android:text="@string/text_induce_start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/height_120dp"
+        android:layout_height="@dimen/height_120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/height_15dp"
+        android:src="@mipmap/icon_panda_roket" />
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/buy_diamond"
+            android:textColor="@color/black_15"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_buy_diamond_close"
+            android:layout_width="@dimen/height_25dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_buy_diamond_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_13dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_35dp"
+            android:paddingRight="@dimen/height_10dp">
+
+            <CheckBox
+                android:id="@+id/cb_1"
+                android:layout_width="@dimen/height_7dp"
+                android:layout_height="@dimen/height_7dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_11dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="100颗钻石"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buy_diamond_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_35dp"
+            android:paddingRight="@dimen/height_10dp">
+
+            <CheckBox
+                android:id="@+id/cb_2"
+                android:layout_width="@dimen/height_7dp"
+                android:layout_height="@dimen/height_7dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_11dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="300颗钻石"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buy_diamond_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_35dp"
+            android:paddingRight="@dimen/height_10dp">
+
+            <CheckBox
+                android:id="@+id/cb_3"
+                android:layout_width="@dimen/height_7dp"
+                android:layout_height="@dimen/height_7dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_11dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="500颗钻石"
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buy_diamond_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_8dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_35dp"
+            android:paddingRight="@dimen/height_10dp">
+
+            <CheckBox
+                android:id="@+id/cb_input"
+                android:layout_width="@dimen/height_7dp"
+                android:layout_height="@dimen/height_7dp"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/et_buy_diamond_input"
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_marginLeft="@dimen/height_11dp"
+                android:background="@drawable/dialog_input_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入10的倍数,最多输入7位数字"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="7"
+                android:paddingLeft="@dimen/height_10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_bb"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bottom_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_buy_diamond_pay"
+            android:layout_width="@dimen/height_210dp"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_marginBottom="@dimen/height_27dp"
+            android:layout_marginTop="@dimen/height_23dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="@string/sure_buy_diamond"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+</LinearLayout>

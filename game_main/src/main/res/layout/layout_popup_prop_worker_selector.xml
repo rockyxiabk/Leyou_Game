@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_worker_root_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_worker_back_popup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_65dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_65dp"
+            android:layout_marginTop="@dimen/height_65dp"
+            android:background="@color/white">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_worker_container"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="@dimen/height_130dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_prop_img"
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="@dimen/height_130dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_default" />
+
+            <TextView
+                android:id="@+id/tv_prop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/height_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_7" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_worker_container"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/height_30dp">
+
+            <Button
+                android:id="@+id/btn_use_prop_to_worker"
+                android:layout_width="@dimen/height_130dp"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:background="@drawable/btn_bg_selector"
+                android:text="使用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_my_prop_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_use_prop_to_worker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:scrollbars="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.ApplyCrowdDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_crowd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="7"
+            android:text="@string/friend_crowd_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_crowd_header"
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_50dp"
+                android:background="@color/transparent"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:fadeDuration="500"
+                fresco:failureImage="@mipmap/ic_launcher"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:retryImage="@mipmap/ic_launcher"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundedCornerRadius="@dimen/height_5dp" />
+
+
+            <TextView
+                android:id="@+id/tv_crowd_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_crowd_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/tv_crowd_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_crowd_nick_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/height_50dp"
+                android:layout_marginRight="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="群简介：游戏着，快乐着"
+                android:textColor="@color/blue_44"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/btn_join_crowd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_below="@id/tv_crowd_introduce"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/height_20dp"
+                android:layout_marginLeft="@dimen/height_50dp"
+                android:layout_marginRight="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/btn_radius_selector"
+                android:text="@string/friend_apply_add_crowd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

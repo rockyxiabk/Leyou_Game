@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_friend_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.FriendDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top">
+
+        <ImageView
+            android:id="@+id/iv_order_pay_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:text="@string/friend_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_75dp"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_contact_header"
+                        android:layout_width="@dimen/height_57dp"
+                        android:layout_height="@dimen/height_57dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_12dp"
+                        android:background="@color/transparent"
+                        fresco:actualImageScaleType="focusCrop"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/ic_launcher"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/ic_launcher"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImage="@mipmap/ic_launcher"
+                        fresco:retryImageScaleType="centerCrop"
+                        fresco:roundedCornerRadius="@dimen/height_6dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_9dp"
+                        android:layout_toRightOf="@id/iv_contact_header"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="小蔡"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/height_4dp"
+                            android:gravity="center_vertical"
+                            android:text="昵称：小蔡"
+                            android:textColor="@color/black_a46"
+                            android:textSize="@dimen/text_size_11"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_6dp" />
+
+            <RelativeLayout
+                android:id="@+id/re_set_remark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_marginTop="@dimen/height_1dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_set_remark"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/height_7dp"
+                        android:layout_height="@dimen/height_12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_next_level" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:visibility="gone"
+                android:background="@color/white_1" />
+
+            <RelativeLayout
+                android:id="@+id/re_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:visibility="gone"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_phone_number"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_friend_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="13718945629"
+                        android:textColor="@color/black_45"
+                        android:textSize="@dimen/text_size_14" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_1" />
+
+            <RelativeLayout
+                android:id="@+id/re_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/friend_address"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_friend_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:text="北京"
+                        android:textColor="@color/black_45"
+                        android:textSize="@dimen/text_size_14" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_played_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_12dp"
+                    android:layout_marginTop="@dimen/height_15dp"
+                    android:text="玩过的游戏"
+                    android:textColor="@color/black_a46"
+                    android:textSize="@dimen/text_size_12" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_83dp"
+                    android:layout_marginTop="@dimen/height_5dp"
+                    android:paddingLeft="@dimen/height_12dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/height_10dp"
+                android:paddingLeft="@dimen/height_12dp"
+                android:paddingRight="@dimen/height_12dp"
+                android:paddingTop="@dimen/height_10dp">
+
+                <Button
+                    android:id="@+id/btn_send_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_42dp"
+                    android:background="@drawable/btn_radius_selector"
+                    android:text="发消息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_friend_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_42dp"
+                    android:layout_marginTop="@dimen/height_12dp"
+                    android:background="@drawable/btn_radius_selector"
+                    android:text="加为好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_friend_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_42dp"
+                    android:layout_marginTop="@dimen/height_12dp"
+                    android:background="@drawable/btn_bg_red_selector"
+                    android:text="删除好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

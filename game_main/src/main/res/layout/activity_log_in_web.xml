@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.mine.LogInWebActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_about_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_about_back"
+            android:text="@string/mine_apply_developer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_7dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_computer"
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:src="@mipmap/icon_computer" />
+
+            <TextView
+                android:id="@+id/tv_address_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_computer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:text="用电脑浏览器打开网址："
+                android:textColor="@color/black_a46"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address_des"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:text="www.pandawanwan.com"
+                android:textColor="@color/black_15"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/height_40dp"
+                android:layout_marginLeft="@dimen/height_12dp"
+                android:layout_marginRight="@dimen/height_12dp"
+                android:background="@drawable/btn_bg_treasure_selector"
+                android:text="已打开网址,点击扫描登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

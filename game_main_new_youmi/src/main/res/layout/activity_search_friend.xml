@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_change_gradually_shape"
+    android:orientation="vertical"
+    tools:context="com.leyou.game.activity.friend.SearchFriendActivity">
+
+    <!--status bar-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top" />
+    <!--toolbar-->
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/height_14dp"
+            android:src="@mipmap/icon_back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ll_bg_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height_15dp">
+
+            <ImageView
+                android:layout_width="@dimen/height_14dp"
+                android:layout_height="@dimen/height_14dp"
+                android:src="@mipmap/icon_search" />
+
+            <EditText
+                android:id="@+id/et_input_key_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:layout_marginRight="@dimen/height_10dp"
+                android:background="@drawable/et_register_bg"
+                android:hint="@string/friend_search_friend_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/black_99"
+                android:textColorHint="@color/black_99"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/find"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_14dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_crowd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_14dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/re_null_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/icon_firend_no_friend"
+                android:text="没有查询到相关信息～" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

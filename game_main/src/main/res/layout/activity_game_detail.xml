@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    tools:context="com.leyou.game.activity.GameDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/re_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_game_detail_back"
+            android:layout_width="@dimen/height_48dp"
+            android:layout_height="@dimen/height_48dp"
+            android:padding="@dimen/height_15dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_game_detail_back"
+            android:text="@string/game_detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_toolbar"
+        android:background="@color/white_f5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height_6dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_game_logo"
+                        android:layout_width="@dimen/height_60dp"
+                        android:layout_height="@dimen/height_60dp"
+                        android:layout_marginBottom="@dimen/height_15dp"
+                        android:layout_marginTop="@dimen/height_15dp"
+                        android:background="@color/transparent"
+                        fresco:actualImageScaleType="focusCrop"
+                        fresco:fadeDuration="500"
+                        fresco:failureImage="@mipmap/ic_launcher"
+                        fresco:failureImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/ic_launcher"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:retryImage="@mipmap/icon_not_login"
+                        fresco:retryImageScaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_game_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/height_12dp"
+                        android:layout_marginTop="@dimen/height_15dp"
+                        android:layout_toRightOf="@id/iv_game_logo"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/tv_game_downloadTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_game_logo"
+                        android:layout_marginLeft="@dimen/height_12dp"
+                        android:layout_toRightOf="@id/iv_game_logo"
+                        android:gravity="bottom"
+                        android:text="546753位玩家玩过"
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_11" />
+
+                    <RatingBar
+                        android:id="@+id/rb_game_score"
+                        style="@style/customRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        android:layout_below="@+id/tv_game_name"
+                        android:layout_alignLeft="@+id/tv_game_name"
+                        android:layout_alignStart="@+id/tv_game_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_260dp"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_game_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_260dp"
+                        android:paddingLeft="@dimen/height_12dp"
+                        android:scrollbars="horizontal"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                    </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/height_15dp"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp"
+                    android:paddingTop="@dimen/height_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_recommend_editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小编推荐"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_recommend_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:ellipsize="end"
+                        android:lines="3"
+                        android:text=""
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_recommend_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="展开"
+                        android:textColor="@color/blue_light"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/height_15dp"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp"
+                    android:paddingTop="@dimen/height_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_award_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="奖励说明"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_award_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:ellipsize="end"
+                        android:lines="3"
+                        android:text=""
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_award_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="展开"
+                        android:textColor="@color/blue_light"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/height_12dp"
+                    android:paddingRight="@dimen/height_12dp"
+                    android:paddingTop="@dimen/height_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_game_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="游戏说明"
+                        android:textColor="@color/black_15"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_game_explain_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:ellipsize="end"
+                        android:lines="3"
+                        android:text=""
+                        android:textColor="@color/black_a46"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_game_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="展开"
+                        android:textColor="@color/blue_light"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_60dp">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/white_f5" />
+
+            <Button
+                android:id="@+id/btn_start_game"
+                android:layout_width="@dimen/height_260dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bg_treasure_confirm_selector"
+                android:text="@string/game_start_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

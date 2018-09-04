@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height_290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_66dp"
+            android:background="@drawable/dialog_top_radius_bg"
+            android:gravity="center"
+            android:text="@string/treasure_add_worker"
+            android:textColor="@color/blue_44"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_21dp">
+
+        <TextView
+            android:id="@+id/tv_treasure_add_worker_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/height_3dp"
+            android:lineSpacingMultiplier="1"
+            android:text=""
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bottom_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/height_27dp"
+        android:paddingLeft="@dimen/height_26dp"
+        android:paddingRight="@dimen/height_26dp"
+        android:paddingTop="@dimen/height_23dp">
+
+        <Button
+            android:id="@+id/btn_treasure_cancel"
+            android:layout_width="@dimen/height_65dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_exit_bg_selector"
+            android:text="@string/no"
+            android:textColor="@color/black_5D"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_treasure_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/height_7dp"
+            android:background="@drawable/btn_radius_selector"
+            android:text="@string/i_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

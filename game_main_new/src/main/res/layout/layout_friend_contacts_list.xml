@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/height_14dp"
+        android:text="A"
+        android:textColor="@color/black_5D"
+        android:textSize="@dimen/text_size_13" />
+
+    <RelativeLayout
+        android:id="@+id/re_contact_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_selector">
+
+            <TextView
+                android:id="@+id/tv_contact_header"
+                android:layout_width="@dimen/height_37dp"
+                android:layout_height="@dimen/height_37dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_14dp"
+                android:background="@mipmap/icon_friend_phone_contacts"
+                android:gravity="center"
+                android:text="娃"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:layout_marginRight="@dimen/height_10dp"
+                android:layout_toLeftOf="@+id/btn_invite"
+                android:layout_toRightOf="@id/tv_contact_header"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="啊魅力无法购买啊什么看萨嘎水淀粉官"
+                android:textColor="@color/black_5D"
+                android:textSize="@dimen/text_size_15" />
+
+            <Button
+                android:id="@+id/btn_invite"
+                android:layout_width="@dimen/height_60dp"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height_34dp"
+                android:background="@drawable/btn_radius_small_selector"
+                android:text="邀请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/white_1" />
+</LinearLayout>

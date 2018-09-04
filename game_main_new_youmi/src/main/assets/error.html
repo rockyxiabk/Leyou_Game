@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>网站加载失败</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul,
+			li {
+				list-style: none;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				background: #fff;
+				font-size: 0.13rem;
+				line-height: 1.6;
+				position: relative;
+			}
+			
+			.about_wrapper {
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -0.675rem;
+			}
+			.error_wrap{
+				width: 100%;
+				text-align: center;
+				font-size: 0;
+			}
+			.error_wrap img{
+				height: 0.96rem;
+			}
+			.about_wrapper p{
+				text-align: center;
+				font-size: 0.14rem;
+				color: #151515;
+				height: 0.22rem;
+				margin-top: 0.17rem;
+			}
+		
+		</style>
+	</head>
+
+	<body>
+
+		<div class="about_wrapper">
+			<div class="error_wrap">
+				<img src="error_tip.png" alt="" />
+			</div>
+			<p>数据加载失败，请稍后再试~</p>
+		</div>
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			/*rem*/
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						//docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+						if(clientWidth >= 540) {
+							docEl.style.fontSize = '150px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="de_dialog_item_message_delete">删除消息</string>
+
+    <string name="contact_notification_someone_agree_your_request">%1$s已同意你的好友请求</string>
+    <string name="contact_notification_agree_your_request">对方已同意你的好友请求</string>
+    <string name="ac_group_list_group_number">%1$d个群组</string>
+    <string name="ac_share_receiver_from">来自：%1$s</string>
+</resources>
