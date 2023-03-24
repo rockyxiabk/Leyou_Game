@@ -1,11 +1,13 @@
 package com.leyou.game.util;
 
+import android.app.Application;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 
 import com.leyou.game.Constants;
+import com.leyou.game.GameApplication;
 import com.leyou.game.bean.UserData;
 
 import java.io.File;
@@ -20,6 +22,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManagerFactory;
 
+import okhttp3.Cache;
 import okhttp3.Callback;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
@@ -138,6 +141,7 @@ public class HttpUtil {
                 .connectTimeout(15, TimeUnit.SECONDS)
                 .readTimeout(15, TimeUnit.SECONDS)
                 .addNetworkInterceptor(mTokenInterceptor)
+                .cache(new Cache(GameApplication.getInstance().getCacheDir().getAbsoluteFile(),Constants.MAX_DISK_CACHE_SIZE))
                 .hostnameVerifier(new HostnameVerifier() {
                     @Override
                     public boolean verify(String s, SSLSession sslSession) {
@@ -157,7 +161,9 @@ public class HttpUtil {
     public static <T> T createApi(Class<T> clazz, String host) {
         Object api = null;
         if (null == api) {
-            api = new Retrofit.Builder().client(okHttpClient).baseUrl(host)
+            api = new Retrofit.Builder()
+                    .client(okHttpClient)
+                    .baseUrl(host)
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
                     .build().create(clazz);
@@ -166,8 +172,7 @@ public class HttpUtil {
     }
 
     public static <T> Subscription subscribe(Observable<T> observable, Observer<T> observer) {
-        return observable
-                .subscribeOn(Schedulers.io())
+        return observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
     }
@@ -205,6 +210,7 @@ public class HttpUtil {
                 callback.onResponse(call, response);
             }
         });
+
     }
 
     /**

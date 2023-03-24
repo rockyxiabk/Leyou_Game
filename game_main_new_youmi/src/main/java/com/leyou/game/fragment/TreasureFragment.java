@@ -487,8 +487,8 @@ public class TreasureFragment extends BaseFragment implements SwipeRefreshLayout
 
     @Override
     public void userUnLogIn() {
-        logInDialog = new LogInDialog(context, false);
-        logInDialog.show();
+//        logInDialog = new LogInDialog(context, false);
+//        logInDialog.show();
     }
 
     @Override

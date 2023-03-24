@@ -139,15 +139,15 @@ public class MyPropFragment extends BaseFragment implements IPropFragment, Swipe
         View inflate = LayoutInflater.from(getContext()).inflate(R.layout.layout_popup_prop_worker_selector, null);
         rootWorkerPopup = inflate.findViewById(R.id.ll_worker_root_popup);
 
-        llMyPropClose = ButterKnife.findById(inflate, R.id.ll_worker_back_popup);
-        llMyPropClose.setOnClickListener(this);
-
-        ivPropImg = ButterKnife.findById(inflate, R.id.iv_prop_img);
-        tvPropName = ButterKnife.findById(inflate, R.id.tv_prop_name);
-
-        btnUseProp = ButterKnife.findById(inflate, R.id.btn_use_prop_to_worker);
-        btnUseProp.setOnClickListener(this);
-        recyclerViewProp = ButterKnife.findById(inflate, R.id.recycler_my_prop_choose);
+//        llMyPropClose = ButterKnife.findById(inflate, R.id.ll_worker_back_popup);
+//        llMyPropClose.setOnClickListener(this);
+//
+//        ivPropImg = ButterKnife.findById(inflate, R.id.iv_prop_img);
+//        tvPropName = ButterKnife.findById(inflate, R.id.tv_prop_name);
+//
+//        btnUseProp = ButterKnife.findById(inflate, R.id.btn_use_prop_to_worker);
+//        btnUseProp.setOnClickListener(this);
+//        recyclerViewProp = ButterKnife.findById(inflate, R.id.recycler_my_prop_choose);
         usePropAdapter = new ChooseWorkerUsePropAdapter(getContext(), workerList);
         usePropAdapter.setChoseItemClickListener(this);
         recyclerViewProp.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));

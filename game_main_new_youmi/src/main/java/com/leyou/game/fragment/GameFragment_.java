@@ -31,6 +31,7 @@ import com.leyou.game.bean.game.GameBean;
 import com.leyou.game.ipresenter.game.IGameFragment;
 import com.leyou.game.presenter.game.GameFragmentPresenter;
 import com.leyou.game.util.GridItemDecoration;
+import com.leyou.game.util.GsonUtil;
 import com.leyou.game.util.HttpUtil;
 import com.leyou.game.util.LogUtil;
 import com.leyou.game.util.ScreenUtil;

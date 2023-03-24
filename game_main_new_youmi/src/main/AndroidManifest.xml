@@ -88,6 +88,10 @@
 
                 <data android:scheme="my-customuri" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
         </activity>
         <activity
             android:name=".activity.MainActivity"

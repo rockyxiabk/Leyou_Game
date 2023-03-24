@@ -122,6 +122,7 @@ public class CircleProgressView extends View {
     public void setProgress(float progress) {
         this.progress = progress * 360 / 100;
         invalidate();// UI thread
+        //postInvalidate();//非UI线程
     }
 
     public void dodo(float progressText, float progress, String msg, boolean isSign) {
@@ -141,7 +142,8 @@ public class CircleProgressView extends View {
         AnimatorSet animation = new AnimatorSet();
 
         ObjectAnimator progressAnimation = ObjectAnimator.ofFloat(this, "progress", 0f, progress);
-        progressAnimation.setDuration(1500);// 动画执行时间
+        progressAnimation.setDuration(1500);
+        // 动画执行时间
 
         /*
          * AccelerateInterpolator　　　　　                 加速，开始时慢中间加速

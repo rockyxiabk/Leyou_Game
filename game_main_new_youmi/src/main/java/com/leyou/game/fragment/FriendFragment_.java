@@ -500,8 +500,8 @@ public class FriendFragment_ extends BaseFragment implements IFriendFragment, Cu
     }
 
     public void userUnLogIn() {
-        logInDialog = new LogInDialog(context, false);
-        logInDialog.show();
+//        logInDialog = new LogInDialog(context, false);
+//        logInDialog.show();
     }
 
     public void userLogInEd() {

@@ -120,31 +120,38 @@ public class Constants {
             packInfo = packageManager.getPackageInfo(packageName, 0);
             versionName = packInfo.versionName;
             versionCode = packInfo.versionCode;
-        } catch (PackageManager.NameNotFoundException e) {
-        }
-        ApplicationInfo appInfo;
-        try {
-            appInfo = packageManager.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
-            channelId = appInfo.metaData.get("UMENG_CHANNEL").toString();
-        } catch (PackageManager.NameNotFoundException e) {
-        }
-        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        imei = tm.getDeviceId();
-        if (null == imei) {
-            imei = tm.getSimSerialNumber();
-        }
-        imsi = tm.getSubscriberId();
 
-        ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-            net = networkInfo.getTypeName();
-            apn = networkInfo.getExtraInfo();
-        } else {
-            net = "";
-            apn = "";
+            ApplicationInfo appInfo;
+            try {
+                appInfo = packageManager.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
+                channelId = appInfo.metaData.get("UMENG_CHANNEL").toString();
+            } catch (PackageManager.NameNotFoundException e) {
+            }
+            TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+
+            try {
+                imei = tm.getDeviceId();
+                if (null == imei) {
+                    imei = tm.getSimSerialNumber();
+                }
+                imsi = tm.getSubscriberId();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+            ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+            if (networkInfo != null && networkInfo.isConnected()) {
+                net = networkInfo.getTypeName();
+                apn = networkInfo.getExtraInfo();
+            } else {
+                net = "";
+                apn = "";
+            }
+            getStartJson();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
         }
-        getStartJson();
     }
 
     /**

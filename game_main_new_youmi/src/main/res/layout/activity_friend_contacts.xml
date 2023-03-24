@@ -146,7 +146,7 @@
             android:text="B"
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_size_30"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
         <com.leyou.game.widget.CustomSlideBar
             android:id="@+id/slideBar"

@@ -149,20 +149,20 @@ public class MyWorkerActivity extends BaseActivity implements IMyWorkerActivity,
         View inflate = LayoutInflater.from(this).inflate(R.layout.layout_popup_worker_prop_selector, null);
         rootWorkerPopup = inflate.findViewById(R.id.ll_worker_root_popup);
 
-        llMyPropClose = ButterKnife.findById(inflate, R.id.ll_worker_back_popup);
-        llMyPropClose.setOnClickListener(this);
-
-        ivWorker = ButterKnife.findById(inflate, R.id.iv_worker_img);
-        ivWorkerStar = ButterKnife.findById(inflate, R.id.iv_worker_star);
-        tvPhy = ButterKnife.findById(inflate, R.id.tv_worker_phy);
-        progressBarPhy = ButterKnife.findById(inflate, R.id.round_pr_phy);
-        tvPower = ButterKnife.findById(inflate, R.id.tv_worker_power);
-        progressBarPower = ButterKnife.findById(inflate, R.id.round_pr_power);
-        gifStar = ButterKnife.findById(inflate, R.id.gif_worker_upgrade_star);
-
-        btnUseProp = ButterKnife.findById(inflate, R.id.btn_use_prop_to_worker);
-        btnUseProp.setOnClickListener(this);
-        recyclerViewProp = ButterKnife.findById(inflate, R.id.recycler_my_prop_choose);
+//        llMyPropClose = ButterKnife.findById(inflate, R.id.ll_worker_back_popup);
+//        llMyPropClose.setOnClickListener(this);
+//
+//        ivWorker = ButterKnife.findById(inflate, R.id.iv_worker_img);
+//        ivWorkerStar = ButterKnife.findById(inflate, R.id.iv_worker_star);
+//        tvPhy = ButterKnife.findById(inflate, R.id.tv_worker_phy);
+//        progressBarPhy = ButterKnife.findById(inflate, R.id.round_pr_phy);
+//        tvPower = ButterKnife.findById(inflate, R.id.tv_worker_power);
+//        progressBarPower = ButterKnife.findById(inflate, R.id.round_pr_power);
+//        gifStar = ButterKnife.findById(inflate, R.id.gif_worker_upgrade_star);
+//
+//        btnUseProp = ButterKnife.findById(inflate, R.id.btn_use_prop_to_worker);
+//        btnUseProp.setOnClickListener(this);
+//        recyclerViewProp = ButterKnife.findById(inflate, R.id.recycler_my_prop_choose);
         propAdapter = new PropUseToWorkerAdapter(this, propList, this);
         recyclerViewProp.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerViewProp.setAdapter(propAdapter);

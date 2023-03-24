@@ -211,13 +211,13 @@ public class MineFragment_ extends BaseFragment implements IMineFragment {
             case R.id.ll_sign:
                 // TODO: 2017/11/1 有待修改
 //                if (flag) {
-                Intent rule = new Intent(context, WebViewActivity.class);
-                rule.putExtra("title", context.getResources().getString(R.string.diamond_convert));
-                rule.putExtra("url", Constants.DIAMOND_CONVERT_URL);
-                rule.putExtra("type", 1);
-                context.startActivity(rule);
+//                Intent rule = new Intent(context, WebViewActivity.class);
+//                rule.putExtra("title", context.getResources().getString(R.string.diamond_convert));
+//                rule.putExtra("url", Constants.DIAMOND_CONVERT_URL);
+//                rule.putExtra("type", 1);
+//                context.startActivity(rule);
 //                } else {
-//                startOtherActivity(SignActivity.class, RegisterActivity.class);
+                startOtherActivity(SignActivity.class, RegisterActivity.class);
 //                }
                 flag = !flag;
                 break;
@@ -309,14 +309,14 @@ public class MineFragment_ extends BaseFragment implements IMineFragment {
             Intent intent_user = new Intent(getContext(), cls);
             context.startActivity(intent_user);
         } else {
-            Intent register = new Intent(getContext(), unLogIn);
+            Intent register = new Intent(getContext(), cls);
             context.startActivity(register);
         }
     }
 
     public void userUnLogIn() {
-        logInDialog = new LogInDialog(context, false);
-        logInDialog.show();
+//        logInDialog = new LogInDialog(context, false);
+//        logInDialog.show();
     }
 
     public void userLogInEd() {

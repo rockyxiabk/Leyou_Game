@@ -297,20 +297,20 @@ public class PlayGameActivity extends BaseWebViewActivity implements View.OnClic
         });
 
         inflate = LayoutInflater.from(this).inflate(R.layout.layout_popup_share, null);
-        rootPopup = ButterKnife.findById(inflate, R.id.root_Popup);
-        rootPopup.setOnClickListener(this);
-        llBack = ButterKnife.findById(inflate, R.id.ll_back);
-        llBack.setOnClickListener(this);
-        llItem1 = ButterKnife.findById(inflate, R.id.ll_item_1);
-        llItem1.setOnClickListener(this);
-        llItem2 = ButterKnife.findById(inflate, R.id.ll_item_2);
-        llItem2.setOnClickListener(this);
-        llItem3 = ButterKnife.findById(inflate, R.id.ll_item_3);
-        llItem3.setOnClickListener(this);
-        llItem4 = ButterKnife.findById(inflate, R.id.ll_item_4);
-        llItem4.setOnClickListener(this);
-        tvCancel = ButterKnife.findById(inflate, R.id.tv_cancel);
-        tvCancel.setOnClickListener(this);
+//        rootPopup = ButterKnife.findById(inflate, R.id.root_Popup);
+//        rootPopup.setOnClickListener(this);
+//        llBack = ButterKnife.findById(inflate, R.id.ll_back);
+//        llBack.setOnClickListener(this);
+//        llItem1 = ButterKnife.findById(inflate, R.id.ll_item_1);
+//        llItem1.setOnClickListener(this);
+//        llItem2 = ButterKnife.findById(inflate, R.id.ll_item_2);
+//        llItem2.setOnClickListener(this);
+//        llItem3 = ButterKnife.findById(inflate, R.id.ll_item_3);
+//        llItem3.setOnClickListener(this);
+//        llItem4 = ButterKnife.findById(inflate, R.id.ll_item_4);
+//        llItem4.setOnClickListener(this);
+//        tvCancel = ButterKnife.findById(inflate, R.id.tv_cancel);
+//        tvCancel.setOnClickListener(this);
         rootPopup.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
